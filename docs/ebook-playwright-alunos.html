@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Playwright Básico · Parte 2 — Material do Aluno · testingwithrenata.com</title>
+<title>Playwright Intermediário — Material do Aluno · testingwithrenata.com</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/ebook.css">
@@ -97,21 +97,21 @@
   <div class="cover-grid"></div>
   <div style="position:relative; z-index:1;">
     <a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-block; margin-bottom:24px;"><img src="img/logo_branca_menor.webp" alt="Testing with Renata" style="height:72px;" class="logo-light"><img src="img/Logo_escura.png" alt="Testing with Renata" style="height:72px;" class="logo-dark"></a>
-    <div class="cover-badge">Material do Aluno · Playwright Básico</div>
-    <h1>Parte 2<br><span>Playwright</span><br>Básico</h1>
-    <p class="cover-sub">Use este material para revisar o conteúdo da aula, consultar os exemplos e praticar em casa no seu ritmo.</p>
+    <div class="cover-badge">Material do Aluno · Playwright Intermediário</div>
+    <h1>Playwright<br><span>Intermediário</span></h1>
+    <p class="cover-sub">Use este material para revisar o conteúdo do workshop, consultar os exemplos e praticar em casa no seu ritmo.</p>
     <div class="cover-meta">
       <div class="cover-meta-item">
-        <span class="cover-meta-label">Módulo</span>
-        <span class="cover-meta-value">Parte 2</span>
+        <span class="cover-meta-label">Duração</span>
+        <span class="cover-meta-value">3 horas</span>
       </div>
       <div class="cover-meta-item">
         <span class="cover-meta-label">Tópicos</span>
-        <span class="cover-meta-value">9 seções</span>
+        <span class="cover-meta-value">8 seções</span>
       </div>
       <div class="cover-meta-item">
         <span class="cover-meta-label">Nível</span>
-        <span class="cover-meta-value">Básico</span>
+        <span class="cover-meta-value">Intermediário</span>
       </div>
       <div class="cover-meta-item">
         <span class="cover-meta-label">Inclui</span>
@@ -134,32 +134,32 @@
       <div class="card">
         <div class="card-title">Conteúdo coberto</div>
         <ul>
-          <li>Configuração avançada do <code>playwright.config</code>: trace, vídeo, screenshots, retries, workers, forbidOnly e reporters</li>
-          <li>Organização com Page Object Model — padrões de nomenclatura e boas práticas</li>
-          <li>Fixtures — setup reutilizável, injeção de dependências e ganho de performance</li>
-          <li>Autenticação reutilizável com <code>storageState</code> — via UI, via API e múltiplos perfis</li>
-          <li>Testes estáveis: auto-waiting, esperas corretas, network idle, mocks e interceptação</li>
-          <li>Múltiplos contextos: multi-user, multi-tab e popups</li>
-          <li>Emulação mobile com device presets</li>
-          <li>CI com GitHub Actions, GitLab CI, CircleCI e merge de relatórios</li>
-          <li>Boas práticas reais: estrutura, paralelismo, lint, data factory e flaky tests</li>
+          <li>Alinhamento e boas práticas essenciais — locators recomendados, anti-patterns e estrutura de projeto</li>
+          <li>Page Objects na prática — estrutura, separação de ações vs validações, quando usar e quando não usar</li>
+          <li>Fixtures e reutilização de setup — custom fixtures, test vs worker scope, compartilhamento de dados</li>
+          <li>Autenticação e gerenciamento de estado — <code>storageState</code>, login reutilizável, múltiplos ambientes</li>
+          <li>Fluxos complexos e múltiplos contextos — multi-page, popups, multi-step flows, multi-user</li>
+          <li>Network interception e API — interceptar requests, mockar respostas, testes de API com <code>request</code></li>
+          <li>Lidando com dados — estratégias para dados de teste, .env, JSON, APIs e mocks</li>
+          <li>Integrações com Slack — envio automático de resultados para canais Slack</li>
         </ul>
       </div>
       <div class="card">
         <div class="card-title">Como usar este material</div>
         <ul>
-          <li>Leia cada seção na ordem para reforçar o que foi visto na aula</li>
+          <li>Leia cada seção na ordem para reforçar o que foi visto no workshop</li>
           <li>Use os <strong>blocos de código</strong> como referência ao praticar</li>
           <li>Faça os exercícios sugeridos em casa para fixar o conteúdo</li>
           <li>Consulte a <strong>Referência Rápida</strong> no final sempre que precisar</li>
-          <li>Acesse <a href="https://playwright.dev/" target="_blank" rel="noopener">playwright.dev</a> para a documentação completa</li>
+          <li>Acesse <a href="https://playwright.dev/" target="_blank" rel="noopener">playwright.dev</a> como referência #1 — é a fonte mais completa e atualizada</li>
+          <li>Acompanhe as releases no <a href="https://github.com/microsoft/playwright/releases" target="_blank" rel="noopener">GitHub (Watch &gt; Custom &gt; Releases)</a></li>
         </ul>
       </div>
     </div>
 
     <div class="info-box">
       <div class="info-box-title">📋 Pré-requisito</div>
-      <p>Este material assume que você completou a <strong>Parte 1</strong>. Você já deve ter o <strong>Node.js v18+</strong>, Playwright instalado e saber criar testes básicos com locators, interações e assertions.</p>
+      <p>Este material assume que você já tem experiência básica com Playwright. Você já deve ter o <strong>Node.js v18+</strong>, Playwright instalado e saber criar testes básicos com locators, interações e assertions.</p>
     </div>
     <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
@@ -172,117 +172,98 @@
   <div class="container">
     <div class="section-number">01</div>
     <div class="section-header">
-      <div class="section-icon">⚙️</div>
+      <div class="section-icon">✅</div>
       <div class="section-heading">
-        <h2>playwright.config</h2>
+        <h2>Alinhamento e Boas Práticas Essenciais</h2>
         <div class="meta">
-          <span class="meta-chip chip-green">Configuração</span>
-          <span class="meta-chip chip-purple">Essencial</span>
+          <span class="meta-chip chip-green">Fundamentos</span>
+          <span class="meta-chip chip-purple">Boas Práticas</span>
         </div>
       </div>
     </div>
 
     <div class="content-grid">
       <div class="card">
-        <div class="card-title">O arquivo playwright.config.ts</div>
+        <div class="card-title">Estrutura de um projeto Playwright</div>
         <ul>
-          <li>Centraliza <strong>todas as configurações</strong> globais do Playwright</li>
-          <li>Define browsers, timeouts, baseURL, retries e paralelismo</li>
-          <li>Controla a geração automática de <strong>traces, vídeos e screenshots</strong></li>
-          <li>Permite configurar diferentes <strong>projects</strong> (browsers, devices)</li>
-          <li>Pode ser sobrescrito via CLI ou por teste individual</li>
-          <li>Documentação completa: <a href="https://playwright.dev/docs/test-configuration" target="_blank" rel="noopener">playwright.dev/docs/test-configuration</a></li>
+          <li><code>tests/</code> — arquivos <code>.spec.ts</code> com os cenários de teste</li>
+          <li><code>pages/</code> — Page Objects para encapsular locators e ações</li>
+          <li><code>fixtures/</code> — setup reutilizável e injeção de dependências</li>
+          <li><code>utils/</code> — helpers, dados, constantes</li>
+          <li><code>playwright.config.ts</code> — configuração centralizada na raiz</li>
+          <li>Comece simples e refatore à medida que o projeto cresce</li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="card-title">Artefatos de debug automáticos</div>
+        <div class="card-title">Locators recomendados</div>
         <ul>
-          <li><code>trace: 'on-first-retry'</code> — grava trace quando o teste falha e é re-executado</li>
-          <li><code>trace: 'on'</code> — grava trace em toda execução (útil em CI)</li>
-          <li><code>video: 'on-first-retry'</code> — grava vídeo do browser quando há retry</li>
-          <li><code>screenshot: 'only-on-failure'</code> — captura screenshot automaticamente ao falhar</li>
-          <li>Artefatos ficam na pasta <code>test-results/</code></li>
-          <li>O <strong>Trace Viewer</strong> é muito mais completo que screenshots ou vídeos — permite inspecionar o DOM, ver a timeline e até fazer pick locator. Acesse via <a href="https://trace.playwright.dev/" target="_blank" rel="noopener">trace.playwright.dev</a></li>
+          <li><code>getByRole()</code> — <strong>preferido</strong>. Baseado em acessibilidade, resiliente a mudanças de UI</li>
+          <li><code>getByTestId()</code> — para elementos sem role semântico acessível</li>
+          <li><code>getByLabel()</code> — para inputs com labels associados</li>
+          <li><code>getByText()</code> — para textos visíveis na tela</li>
+          <li><code>getByPlaceholder()</code> — para inputs com placeholder</li>
+          <li>Documentação: <a href="https://playwright.dev/docs/locators" target="_blank" rel="noopener">playwright.dev/docs/locators</a></li>
         </ul>
       </div>
     </div>
 
     <div class="content-grid">
       <div class="card">
-        <div class="card-title">Retries, Workers e Paralelismo</div>
+        <div class="card-title">Anti-patterns comuns</div>
         <ul>
-          <li><code>retries</code> — número de vezes que um teste falho será re-executado. <strong>Recomendado: 1</strong> (máximo 2 para projetos novos)</li>
-          <li>Quanto mais retries, mais tempo e recurso consumido — se o teste precisa de 3 retries para passar, investigue a causa raiz</li>
-          <li><code>workers</code> — número de threads paralelas. Depende do hardware e da infra de CI</li>
-          <li><code>fullyParallel: true</code> — roda testes individuais em paralelo (não apenas arquivos)</li>
-          <li>Use <code><a href="https://playwright.dev/docs/api/class-test#test-describe-serial" target="_blank" rel="noopener">test.describe.serial</a></code> quando precisar que testes rodem em sequência dentro de um arquivo</li>
-          <li>Dica: use ternários para configurar valores diferentes em CI vs local — ex.: <code>retries: process.env.CI ? 2 : 0</code></li>
+          <li><strong><code>waitForTimeout()</code></strong> — nunca use! Faz um "pause" fixo, torna o teste lento e instável</li>
+          <li><strong>Seletores frágeis</strong> — evite CSS com classes geradas (<code>.btn-x7k2</code>), XPath longo, IDs dinâmicos</li>
+          <li><strong>Lógica dentro do teste</strong> — não coloque <code>if/else</code>, <code>for</code>, <code>try/catch</code> nos specs. Extraia para helpers ou Page Objects</li>
+          <li><strong>Dependência entre testes</strong> — cada teste deve funcionar isoladamente</li>
+          <li><strong>Dados fixos compartilhados</strong> — gera conflitos em paralelo. Use dados únicos por teste</li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="card-title">forbidOnly, Reporters e Timeouts</div>
+        <div class="card-title">Dicas para projetos reais</div>
         <ul>
-          <li><code><a href="https://playwright.dev/docs/api/class-testconfig#test-config-forbid-only" target="_blank" rel="noopener">forbidOnly</a></code> — impede que <code>.only</code> suba para a pipeline. Essencial em CI para evitar que apenas um teste rode por engano</li>
-          <li>Reporters disponíveis: <code>html</code>, <code>dot</code>, <code>list</code>, <code>line</code>, <code>json</code>, <code>junit</code> — o <code>junit</code> é ideal para integração com GitHub/GitLab, mostrando resultados direto no PR. Veja: <a href="https://playwright.dev/docs/test-reporters" target="_blank" rel="noopener">playwright.dev/docs/test-reporters</a></li>
-          <li>Dois tipos de timeout: <strong>timeout de ação</strong> (para cliques, navegação) e <strong>timeout de expect</strong> (para assertions)</li>
-          <li>Prefira configurar timeout <strong>por ação específica</strong> em vez de aumentar o timeout global — ex.: <code>await expect(el).toBeVisible({ timeout: 15000 })</code></li>
-          <li><code>baseURL</code> pode ser uma string fixa ou uma função que retorna a URL dinâmica do ambiente (útil para feature branches)</li>
+          <li>Use <a href="https://playwright.dev/" target="_blank" rel="noopener">playwright.dev</a> como referência #1 — é sempre a fonte mais atualizada</li>
+          <li>Ative notificações de releases no GitHub para acompanhar novidades</li>
+          <li>Prefira <code>expect</code> com auto-retry em vez de esperas manuais</li>
+          <li>Configure <code>forbidOnly: !!process.env.CI</code> para evitar <code>.only</code> na pipeline</li>
+          <li>Use <code>trace: 'on-first-retry'</code> como padrão — diagnóstico sem impacto em performance</li>
         </ul>
       </div>
     </div>
 
     <div class="code-block">
-      <pre><span class="cm">// playwright.config.ts — configuração completa com artefatos e boas práticas</span>
-<span class="kw">import</span> { defineConfig } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+      <pre><span class="cm">// ❌ Anti-patterns — EVITE isso</span>
+<span class="kw">await</span> page.<span class="fn">waitForTimeout</span>(<span class="num">3000</span>); <span class="cm">// Nunca use!</span>
+<span class="kw">await</span> page.<span class="fn">locator</span>(<span class="str">'.btn-x7k2 &gt; div:nth-child(3)'</span>).<span class="fn">click</span>(); <span class="cm">// Seletor frágil</span>
+<span class="kw">await</span> page.<span class="fn">locator</span>(<span class="str">'xpath=//div[@class="container"]/form/button[2]'</span>).<span class="fn">click</span>(); <span class="cm">// XPath longo</span>
 
-<span class="kw">export default</span> <span class="fn">defineConfig</span>({
-  testDir: <span class="str">'./tests'</span>,
-  fullyParallel: <span class="kw">true</span>,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? <span class="num">2</span> : <span class="num">0</span>,
-  workers: process.env.CI ? <span class="num">4</span> : undefined,
-  reporter: <span class="str">'html'</span>,
+<span class="cm">// ✅ Boas práticas — USE isso</span>
+<span class="kw">await</span> page.<span class="fn">getByRole</span>(<span class="str">'button'</span>, { name: <span class="str">'Enviar'</span> }).<span class="fn">click</span>(); <span class="cm">// Role-based</span>
+<span class="kw">await</span> page.<span class="fn">getByTestId</span>(<span class="str">'submit-form'</span>).<span class="fn">click</span>(); <span class="cm">// Test ID</span>
+<span class="kw">await</span> page.<span class="fn">getByLabel</span>(<span class="str">'E-mail'</span>).<span class="fn">fill</span>(<span class="str">'user@email.com'</span>); <span class="cm">// Label</span>
 
-  use: {
-    baseURL: <span class="str">'https://exemplo.com'</span>,
-    trace: <span class="str">'on-first-retry'</span>,
-    video: <span class="str">'on-first-retry'</span>,
-    screenshot: <span class="str">'only-on-failure'</span>,
-  },
-
-  projects: [
-    { name: <span class="str">'chromium'</span>, use: { browserName: <span class="str">'chromium'</span> } },
-    { name: <span class="str">'firefox'</span>, use: { browserName: <span class="str">'firefox'</span> } },
-  ],
-});</pre>
-    </div>
-
-    <div class="code-block">
-      <pre><span class="cm">// Timeout específico por ação (em vez de aumentar o global)</span>
-<span class="kw">await</span> <span class="fn">expect</span>(page.<span class="fn">getByText</span>(<span class="str">'Dados carregados'</span>)).<span class="fn">toBeVisible</span>({ timeout: <span class="num">15000</span> });
-
-<span class="cm">// test.describe.serial — forçar execução sequencial em um arquivo</span>
-test.<span class="fn">describe</span>.<span class="fn">serial</span>(<span class="str">'fluxo de checkout'</span>, () => {
-  test(<span class="str">'adicionar produto'</span>, <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });
-  test(<span class="str">'preencher endereço'</span>, <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });
-  test(<span class="str">'finalizar compra'</span>, <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });
+<span class="cm">// ❌ Lógica dentro do teste</span>
+test(<span class="str">'fluxo com condicionais'</span>, <span class="kw">async</span> ({ page }) =&gt; {
+  <span class="kw">const</span> isVisible = <span class="kw">await</span> page.<span class="fn">getByText</span>(<span class="str">'Banner'</span>).<span class="fn">isVisible</span>();
+  <span class="kw">if</span> (isVisible) { <span class="cm">/* ... */</span> } <span class="cm">// Não faça isso no spec!</span>
 });
 
-<span class="cm">// test.skip e test.only — controlar quais testes rodam</span>
-test.<span class="fn">skip</span>(<span class="str">'feature em desenvolvimento'</span>, <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });
-test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>, <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });</pre>
+<span class="cm">// ✅ Teste direto e claro</span>
+test(<span class="str">'banner é exibido na home'</span>, <span class="kw">async</span> ({ page }) =&gt; {
+  <span class="kw">await</span> page.<span class="fn">goto</span>(<span class="str">'/'</span>);
+  <span class="kw">await</span> <span class="fn">expect</span>(page.<span class="fn">getByText</span>(<span class="str">'Banner'</span>)).<span class="fn">toBeVisible</span>();
+});</pre>
     </div>
 
     <div class="remember-box">
       <div class="remember-box-title">💡 Para lembrar</div>
-      <p>Use <code>trace: 'on-first-retry'</code> como padrão — você ganha visibilidade total quando um teste falha sem impactar a performance das execuções que passam. Em CI, considere <code>trace: 'on'</code> para ter sempre o diagnóstico completo. O <strong>Trace Viewer</strong> mostra o DOM completo, timeline, network e permite inspecionar elementos — na maioria dos casos é muito mais útil que screenshots ou vídeos.</p>
+      <p>O Playwright já implementa <strong>auto-waiting</strong> na maioria das ações. Não tente reinventar a espera — use assertions com auto-retry (<code>expect</code>) e confie no framework. Consulte a <a href="https://playwright.dev/docs/actionability" target="_blank" rel="noopener">tabela de actionability</a> para entender quais checks cada ação faz automaticamente.</p>
     </div>
 
     <div class="warn-box">
-      <div class="warn-box-title">⚠️ Cuidado com .only</div>
-      <p>É muito comum esquecer um <code>test.only()</code> no código e comitar para a pipeline. Quando isso acontece, só aquele teste roda e os outros são ignorados — dando uma falsa impressão de que tudo passou. Use <code>forbidOnly: !!process.env.CI</code> no config para evitar esse problema.</p>
+      <div class="warn-box-title">⚠️ Seletores frágeis quebram sem aviso</div>
+      <p>Seletores baseados em classes CSS geradas, posição no DOM ou estrutura HTML mudam a cada deploy. Use <code>getByRole()</code>, <code>getByTestId()</code> e <code>getByLabel()</code> — eles são resilientes a mudanças de layout e refatorações de frontend.</p>
     </div>
     <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
@@ -297,41 +278,65 @@ test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>, 
     <div class="section-header">
       <div class="section-icon">🏗️</div>
       <div class="section-heading">
-        <h2>Organização e Arquitetura</h2>
+        <h2>Page Objects na Prática</h2>
         <div class="meta">
           <span class="meta-chip chip-green">Arquitetura</span>
-          <span class="meta-chip chip-purple">Boas Práticas</span>
+          <span class="meta-chip chip-purple">Manutenção</span>
         </div>
       </div>
     </div>
 
     <div class="content-grid">
       <div class="card">
-        <div class="card-title">Page Object Model (POM)</div>
+        <div class="card-title">O problema: testes duplicados e difíceis de manter</div>
         <ul>
-          <li>Padrão que <strong>encapsula os locators e ações</strong> de cada página em uma classe</li>
-          <li>Separa a lógica de interação da lógica de teste</li>
-          <li>Facilita a manutenção: se a UI muda, você atualiza só o Page Object</li>
-          <li>Cada página da aplicação vira uma classe com métodos reutilizáveis</li>
-          <li>Testes ficam mais legíveis e curtos</li>
+          <li>Sem Page Object, locators e ações são <strong>repetidos em vários specs</strong></li>
+          <li>Quando a UI muda, você precisa alterar N arquivos em vez de 1</li>
+          <li>Testes ficam longos, difíceis de ler e propensos a inconsistências</li>
+          <li>Nomes de variáveis e seletores ficam inconsistentes entre specs</li>
+          <li>Dificulta onboarding de novos membros no time</li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="card-title">Boas práticas de Page Object</div>
+        <div class="card-title">Estrutura simples de Page Object</div>
         <ul>
-          <li>Nomeie sempre a classe com o sufixo <strong>Page</strong> — ex.: <code>LoginPage</code>, <code>CheckoutPage</code> — facilita o autocomplete e evita duplicidade</li>
-          <li>Nomeie variáveis de locator com o tipo do elemento: <code>submitButton</code>, <code>emailInput</code>, <code>errorLabel</code></li>
-          <li>Coloque métodos de assert no Page Object (prefixe com <code>assert</code>) para reutilizar em vários specs</li>
-          <li>Mantenha arquivos com <strong>no máximo ~200 linhas</strong> — refatore quando crescer demais</li>
-          <li>Comece simples e divida à medida que o projeto cresce — não tente antecipar toda a estrutura</li>
+          <li>Uma classe por página (ou componente) da aplicação</li>
+          <li><strong>Constructor:</strong> recebe <code>page</code> e define todos os locators</li>
+          <li><strong>Métodos de ação:</strong> <code>goto()</code>, <code>login()</code>, <code>fillForm()</code> — executam interações</li>
+          <li><strong>Métodos de assert:</strong> <code>assertSuccess()</code>, <code>assertError()</code> — validam estado</li>
+          <li>Nomeie com sufixo <strong>Page</strong>: <code>LoginPage</code>, <code>CheckoutPage</code></li>
           <li>Documentação: <a href="https://playwright.dev/docs/pom" target="_blank" rel="noopener">playwright.dev/docs/pom</a></li>
         </ul>
       </div>
     </div>
 
+    <div class="content-grid">
+      <div class="card">
+        <div class="card-title">Separar ações vs validações</div>
+        <ul>
+          <li><strong>Ações</strong> (métodos que fazem coisas): <code>login()</code>, <code>addToCart()</code>, <code>submitForm()</code></li>
+          <li><strong>Validações</strong> (métodos que verificam): <code>assertLoginSuccess()</code>, <code>assertErrorVisible()</code></li>
+          <li>Prefixe validações com <code>assert</code> para facilitar o autocomplete</li>
+          <li>Métodos de ação <strong>não devem conter assertions</strong> — mantenha responsabilidades separadas</li>
+          <li>Exceção: um <code>await expect(page).toHaveURL()</code> dentro de <code>goto()</code> pode ser aceitável como guarda</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Quando NÃO usar Page Object</div>
+        <ul>
+          <li>Projetos muito pequenos (1-5 specs) — adiciona complexidade desnecessária</li>
+          <li>Testes de API puros — não há página para encapsular</li>
+          <li>Testes exploratórios ou POCs — velocidade é prioridade</li>
+          <li>Quando cada teste é completamente diferente — não há reutilização real</li>
+          <li><strong>Regra:</strong> comece sem POM, e refatore quando perceber repetição</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="code-block">
-      <pre><span class="cm">// pages/login.page.ts — Page Object com padrões de nomenclatura</span>
+      <pre><span class="cm">// pages/login.page.ts — Page Object com separação ações vs validações</span>
 <span class="kw">import</span> { type Page, type Locator, expect } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
 
 <span class="kw">export class</span> <span class="fn">LoginPage</span> {
@@ -347,12 +352,9 @@ test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>, 
     <span class="kw">this</span>.errorLabel = page.<span class="fn">getByTestId</span>(<span class="str">'login-error'</span>);
   }
 
+  <span class="cm">// ── Ações ──</span>
   <span class="kw">async</span> <span class="fn">goto</span>() {
     <span class="kw">await</span> <span class="kw">this</span>.page.<span class="fn">goto</span>(<span class="str">'/login'</span>);
-  }
-
-  <span class="kw">async</span> <span class="fn">fillUsername</span>(email: <span class="str">string</span>) {
-    <span class="kw">await</span> <span class="kw">this</span>.emailInput.<span class="fn">fill</span>(email);
   }
 
   <span class="kw">async</span> <span class="fn">login</span>(email: <span class="str">string</span>, senha: <span class="str">string</span>) {
@@ -361,6 +363,7 @@ test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>, 
     <span class="kw">await</span> <span class="kw">this</span>.submitButton.<span class="fn">click</span>();
   }
 
+  <span class="cm">// ── Validações ──</span>
   <span class="kw">async</span> <span class="fn">assertLoginSuccess</span>() {
     <span class="kw">await</span> <span class="fn">expect</span>(<span class="kw">this</span>.page).<span class="fn">toHaveURL</span>(<span class="str">/dashboard/</span>);
   }
@@ -368,20 +371,22 @@ test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>, 
   <span class="kw">async</span> <span class="fn">assertErrorVisible</span>(message: <span class="str">string</span>) {
     <span class="kw">await</span> <span class="fn">expect</span>(<span class="kw">this</span>.errorLabel).<span class="fn">toContainText</span>(message);
   }
-}
+}</pre>
+    </div>
 
-<span class="cm">// tests/login.spec.ts — Teste usando o Page Object</span>
+    <div class="code-block">
+      <pre><span class="cm">// tests/login.spec.ts — Teste limpo usando Page Object</span>
 <span class="kw">import</span> { test } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
 <span class="kw">import</span> { LoginPage } <span class="kw">from</span> <span class="str">'../pages/login.page'</span>;
 
-test(<span class="str">'login com sucesso'</span>, <span class="kw">async</span> ({ page }) => {
+test(<span class="str">'login com sucesso'</span>, <span class="kw">async</span> ({ page }) =&gt; {
   <span class="kw">const</span> loginPage = <span class="kw">new</span> <span class="fn">LoginPage</span>(page);
   <span class="kw">await</span> loginPage.<span class="fn">goto</span>();
   <span class="kw">await</span> loginPage.<span class="fn">login</span>(<span class="str">'user@email.com'</span>, <span class="str">'senha123'</span>);
   <span class="kw">await</span> loginPage.<span class="fn">assertLoginSuccess</span>();
 });
 
-test(<span class="str">'exibe erro com senha inválida'</span>, <span class="kw">async</span> ({ page }) => {
+test(<span class="str">'exibe erro com credenciais inválidas'</span>, <span class="kw">async</span> ({ page }) =&gt; {
   <span class="kw">const</span> loginPage = <span class="kw">new</span> <span class="fn">LoginPage</span>(page);
   <span class="kw">await</span> loginPage.<span class="fn">goto</span>();
   <span class="kw">await</span> loginPage.<span class="fn">login</span>(<span class="str">'user@email.com'</span>, <span class="str">'errada'</span>);
@@ -389,111 +394,18 @@ test(<span class="str">'exibe erro com senha inválida'</span>, <span class="kw"
 });</pre>
     </div>
 
-    <div class="info-box">
-      <div class="info-box-title">🏗️ Page Object não é só para páginas</div>
-      <p>Você pode criar Page Objects para <strong>componentes reutilizáveis</strong> como menus, modais ou barras de navegação — ex.: <code>TopMenuPage</code> com o método <code>logout()</code> que aparece em todas as páginas. Também pode criar "Request Objects" para chamadas de API que encapsulam URL, método e payload.</p>
+    <div class="remember-box">
+      <div class="remember-box-title">💡 Para lembrar</div>
+      <p>Page Object não é só para páginas inteiras. Crie Page Objects para <strong>componentes reutilizáveis</strong> como menus, modais ou barras de navegação — ex.: <code>TopMenuPage</code> com o método <code>logout()</code>. Comece simples e divida à medida que o projeto cresce.</p>
     </div>
 
     <div class="practice-box">
       <div class="practice-box-title">🏠 Para praticar em casa</div>
       <ul>
-        <li>Crie um Page Object para uma página de cadastro com métodos <code>goto()</code> e <code>register()</code></li>
-        <li>Refatore um teste existente para usar o Page Object e compare a legibilidade</li>
-        <li>Crie um Page Object para um componente (ex.: menu de navegação) e importe-o em dois specs diferentes</li>
+        <li>Crie um Page Object para uma página de cadastro com métodos <code>goto()</code>, <code>register()</code> e <code>assertRegistrationSuccess()</code></li>
+        <li>Refatore um teste existente para usar Page Object e compare a legibilidade</li>
+        <li>Crie um Page Object para um componente (ex.: menu de navegação) e use-o em dois specs</li>
       </ul>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- ══════════ SEÇÃO 2B — FIXTURES ══════════ -->
-    <div class="section-number">02b</div>
-    <div class="section-header">
-      <div class="section-icon">🧩</div>
-      <div class="section-heading">
-        <h2>Fixtures</h2>
-        <div class="meta">
-          <span class="meta-chip chip-green">Arquitetura</span>
-          <span class="meta-chip chip-purple">Performance</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="content-grid">
-      <div class="card">
-        <div class="card-title">O que são Fixtures</div>
-        <ul>
-          <li><strong>Fixtures</strong> são um mecanismo nativo do Playwright para compartilhar setup entre testes e injetar dependências automaticamente</li>
-          <li>Substituem <code>beforeEach</code> repetitivos — o código roda antes do teste e é limpo automaticamente</li>
-          <li>Gerenciam o ciclo de vida de recursos: page objects, dados, contextos de browser</li>
-          <li>Podem <strong>acelerar a execução em até 70%</strong> ao manter objetos na memória entre testes</li>
-          <li>Separação clara: <strong>fixtures</strong> para setup, <strong>page objects</strong> para ações, <strong>specs</strong> para validações</li>
-          <li>Documentação: <a href="https://playwright.dev/docs/test-fixtures" target="_blank" rel="noopener">playwright.dev/docs/test-fixtures</a></li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Quando usar (e quando não usar)</div>
-        <ul>
-          <li><strong>Use</strong> quando: muitos page objects, suíte grande, padrão repetitivo entre specs, dependências claras</li>
-          <li><strong>Não use</strong> em projetos pequenos onde cada teste é diferente — adiciona complexidade desnecessária</li>
-          <li><strong>Vantagem:</strong> elimina linhas de <code>new PageObject()</code> e <code>beforeEach</code> de todos os specs</li>
-          <li><strong>Desvantagem:</strong> curva de aprendizado, pode carregar coisas na memória desnecessariamente, e código "morto" pode acumular</li>
-          <li>Se os fluxos do sistema são muito independentes, prefira uma fixture por page object em vez de uma fixture única</li>
-          <li>Mantenha regras de lint e revisões para evitar code debt nas fixtures</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="code-block">
-      <pre><span class="cm">// fixtures/auth.fixture.ts — Fixture customizada</span>
-<span class="kw">import</span> { test <span class="kw">as</span> base } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
-<span class="kw">import</span> { LoginPage } <span class="kw">from</span> <span class="str">'../pages/login.page'</span>;
-<span class="kw">import</span> { DashboardPage } <span class="kw">from</span> <span class="str">'../pages/dashboard.page'</span>;
-
-<span class="kw">type</span> MyFixtures = {
-  loginPage: LoginPage;
-  dashboardPage: DashboardPage;
-};
-
-<span class="kw">export const</span> test = base.<span class="fn">extend</span>&lt;MyFixtures&gt;({
-  loginPage: <span class="kw">async</span> ({ page }, use) => {
-    <span class="kw">const</span> loginPage = <span class="kw">new</span> <span class="fn">LoginPage</span>(page);
-    <span class="kw">await</span> loginPage.<span class="fn">goto</span>();
-    <span class="kw">await</span> <span class="fn">use</span>(loginPage);
-  },
-
-  dashboardPage: <span class="kw">async</span> ({ page }, use) => {
-    <span class="kw">await</span> <span class="fn">use</span>(<span class="kw">new</span> <span class="fn">DashboardPage</span>(page));
-  },
-});
-
-<span class="kw">export</span> { expect } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
-
-<span class="cm">// tests/login.spec.ts — Usando a fixture (import do fixture, não do playwright)</span>
-<span class="kw">import</span> { test, expect } <span class="kw">from</span> <span class="str">'../fixtures/auth.fixture'</span>;
-
-test(<span class="str">'login com sucesso'</span>, <span class="kw">async</span> ({ loginPage }) => {
-  <span class="kw">await</span> loginPage.<span class="fn">login</span>(<span class="str">'user@email.com'</span>, <span class="str">'senha123'</span>);
-  <span class="kw">await</span> loginPage.<span class="fn">assertLoginSuccess</span>();
-});
-
-<span class="cm">// tests/dashboard.spec.ts — Reutilizando a mesma fixture</span>
-<span class="kw">import</span> { test, expect } <span class="kw">from</span> <span class="str">'../fixtures/auth.fixture'</span>;
-
-test(<span class="str">'dashboard exibe dados do usuário'</span>, <span class="kw">async</span> ({ dashboardPage }) => {
-  <span class="cm">// dashboardPage já está pronto — fixture fez o setup</span>
-  <span class="kw">await</span> <span class="fn">expect</span>(dashboardPage.welcomeLabel).<span class="fn">toBeVisible</span>();
-});</pre>
-    </div>
-
-    <div class="remember-box">
-      <div class="remember-box-title">💡 Como a Fixture funciona</div>
-      <p>A fixture executa tudo que está <strong>antes</strong> da chamada <code>use()</code> como setup, passa o objeto para o teste, e executa tudo que está <strong>depois</strong> do <code>use()</code> como teardown. O Playwright gerencia isso de forma otimizada — os objetos ficam na memória e são reutilizados, diferente de um <code>beforeEach</code> que recria tudo a cada teste.</p>
-    </div>
-
-    <div class="warn-box">
-      <div class="warn-box-title">⚠️ Cuidado com fixtures grandes</div>
-      <p>Uma fixture "base" que instancia todos os page objects de uma vez é conveniente, mas carrega tudo na memória mesmo quando o teste precisa de apenas um. Se os fluxos do sistema são independentes, considere criar uma fixture por área — ex.: <code>auth.fixture.ts</code>, <code>checkout.fixture.ts</code>, <code>messages.fixture.ts</code>.</p>
     </div>
     <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
@@ -506,9 +418,160 @@ test(<span class="str">'dashboard exibe dados do usuário'</span>, <span class="
   <div class="container">
     <div class="section-number">03</div>
     <div class="section-header">
+      <div class="section-icon">🧩</div>
+      <div class="section-heading">
+        <h2>Fixtures e Reutilização de Setup</h2>
+        <div class="meta">
+          <span class="meta-chip chip-green">Arquitetura</span>
+          <span class="meta-chip chip-purple">Performance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div class="card">
+        <div class="card-title">O que são Fixtures</div>
+        <ul>
+          <li><strong>Fixtures</strong> são um mecanismo nativo do Playwright para compartilhar setup entre testes</li>
+          <li>Substituem <code>beforeEach</code> repetitivos — o código roda antes do teste e é limpo automaticamente</li>
+          <li>Gerenciam o ciclo de vida: page objects, dados, contextos de browser</li>
+          <li>Tudo antes do <code>use()</code> é <strong>setup</strong>, tudo depois é <strong>teardown</strong></li>
+          <li>O Playwright já possui fixtures built-in: <code>page</code>, <code>context</code>, <code>browser</code>, <code>request</code></li>
+          <li>Documentação: <a href="https://playwright.dev/docs/test-fixtures" target="_blank" rel="noopener">playwright.dev/docs/test-fixtures</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Test scope vs Worker scope</div>
+        <ul>
+          <li><strong>Test scope</strong> (padrão): criada e destruída para cada teste. Isolamento total</li>
+          <li><strong>Worker scope</strong>: criada uma vez por worker e compartilhada entre todos os testes daquele worker</li>
+          <li>Use worker scope para recursos caros: conexão de banco, autenticação, dados estáticos</li>
+          <li>Use test scope para page objects, dados que mudam entre testes</li>
+          <li>Defina o scope com <code>{ scope: 'worker' }</code> no segundo argumento da fixture</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div class="card">
+        <div class="card-title">Compartilhando dados entre testes</div>
+        <ul>
+          <li>Fixtures permitem passar dados preparados diretamente para os testes</li>
+          <li>Ex.: uma fixture que cria um usuário via API e passa os dados para o teste</li>
+          <li>Evita duplicar setup em <code>beforeEach</code> de vários specs</li>
+          <li>Fixtures podem depender umas das outras — o Playwright resolve a cadeia automaticamente</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Custom Fixtures — quando criar</div>
+        <ul>
+          <li>Quando múltiplos specs instanciam os mesmos Page Objects</li>
+          <li>Quando o setup envolve chamadas de API ou criação de dados</li>
+          <li>Quando quer encapsular login + navegação como pré-condição</li>
+          <li>Mantenha fixtures focadas — uma por área em vez de uma fixture gigante</li>
+          <li>Exporte <code>test</code> e <code>expect</code> do arquivo de fixture</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <pre><span class="cm">// fixtures/app.fixture.ts — Custom fixture com page objects</span>
+<span class="kw">import</span> { test <span class="kw">as</span> base } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+<span class="kw">import</span> { LoginPage } <span class="kw">from</span> <span class="str">'../pages/login.page'</span>;
+<span class="kw">import</span> { DashboardPage } <span class="kw">from</span> <span class="str">'../pages/dashboard.page'</span>;
+
+<span class="kw">type</span> AppFixtures = {
+  loginPage: LoginPage;
+  dashboardPage: DashboardPage;
+};
+
+<span class="kw">export const</span> test = base.<span class="fn">extend</span>&lt;AppFixtures&gt;({
+  loginPage: <span class="kw">async</span> ({ page }, use) =&gt; {
+    <span class="kw">const</span> loginPage = <span class="kw">new</span> <span class="fn">LoginPage</span>(page);
+    <span class="kw">await</span> loginPage.<span class="fn">goto</span>();
+    <span class="kw">await</span> <span class="fn">use</span>(loginPage);
+    <span class="cm">// teardown (opcional): logout, limpar dados, etc.</span>
+  },
+
+  dashboardPage: <span class="kw">async</span> ({ page }, use) =&gt; {
+    <span class="kw">await</span> <span class="fn">use</span>(<span class="kw">new</span> <span class="fn">DashboardPage</span>(page));
+  },
+});
+
+<span class="kw">export</span> { expect } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;</pre>
+    </div>
+
+    <div class="code-block">
+      <pre><span class="cm">// fixtures/data.fixture.ts — Fixture com worker scope para dados compartilhados</span>
+<span class="kw">import</span> { test <span class="kw">as</span> base } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+
+<span class="kw">type</span> WorkerFixtures = {
+  apiToken: <span class="str">string</span>;
+};
+
+<span class="kw">export const</span> test = base.<span class="fn">extend</span>&lt;{}, WorkerFixtures&gt;({
+  apiToken: [<span class="kw">async</span> ({}, use) =&gt; {
+    <span class="cm">// Setup: obter token uma vez por worker</span>
+    <span class="kw">const</span> response = <span class="kw">await</span> <span class="fn">fetch</span>(<span class="str">'https://api.example.com/auth'</span>, {
+      method: <span class="str">'POST'</span>,
+      body: <span class="fn">JSON</span>.<span class="fn">stringify</span>({ user: <span class="str">'test'</span>, pass: <span class="str">'test'</span> }),
+    });
+    <span class="kw">const</span> { token } = <span class="kw">await</span> response.<span class="fn">json</span>();
+    <span class="kw">await</span> <span class="fn">use</span>(token);
+    <span class="cm">// Teardown: revogar token</span>
+  }, { scope: <span class="str">'worker'</span> }],
+});</pre>
+    </div>
+
+    <div class="code-block">
+      <pre><span class="cm">// tests/dashboard.spec.ts — Usando a fixture customizada</span>
+<span class="kw">import</span> { test, expect } <span class="kw">from</span> <span class="str">'../fixtures/app.fixture'</span>;
+
+test(<span class="str">'login com sucesso via fixture'</span>, <span class="kw">async</span> ({ loginPage }) =&gt; {
+  <span class="cm">// loginPage já navegou para /login (fixture fez o setup)</span>
+  <span class="kw">await</span> loginPage.<span class="fn">login</span>(<span class="str">'user@email.com'</span>, <span class="str">'senha123'</span>);
+  <span class="kw">await</span> loginPage.<span class="fn">assertLoginSuccess</span>();
+});
+
+test(<span class="str">'dashboard exibe dados'</span>, <span class="kw">async</span> ({ dashboardPage }) =&gt; {
+  <span class="kw">await</span> <span class="fn">expect</span>(dashboardPage.welcomeLabel).<span class="fn">toBeVisible</span>();
+});</pre>
+    </div>
+
+    <div class="remember-box">
+      <div class="remember-box-title">💡 Como a Fixture funciona</div>
+      <p>A fixture executa tudo que está <strong>antes</strong> de <code>use()</code> como setup, passa o objeto para o teste, e executa tudo <strong>depois</strong> de <code>use()</code> como teardown. O Playwright gerencia isso de forma otimizada — diferente de <code>beforeEach</code> que recria tudo a cada teste.</p>
+    </div>
+
+    <div class="warn-box">
+      <div class="warn-box-title">⚠️ Cuidado com fixtures grandes</div>
+      <p>Uma fixture "base" que instancia todos os page objects de uma vez carrega tudo na memória mesmo quando o teste precisa de apenas um. Crie fixtures por área — ex.: <code>auth.fixture.ts</code>, <code>checkout.fixture.ts</code> — para manter o projeto escalável.</p>
+    </div>
+
+    <div class="practice-box">
+      <div class="practice-box-title">🏠 Para praticar em casa</div>
+      <ul>
+        <li>Crie uma fixture que instancia um Page Object e navega para a página</li>
+        <li>Crie uma fixture com worker scope que gera um token de API reutilizável</li>
+        <li>Refatore um <code>beforeEach</code> repetitivo para usar fixture</li>
+      </ul>
+    </div>
+    <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ SEÇÃO 4 ══════════ -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-number">04</div>
+    <div class="section-header">
       <div class="section-icon">🔐</div>
       <div class="section-heading">
-        <h2>Autenticação</h2>
+        <h2>Autenticação e Gerenciamento de Estado</h2>
         <div class="meta">
           <span class="meta-chip chip-green">Prática</span>
           <span class="meta-chip chip-purple">Otimização</span>
@@ -521,29 +584,51 @@ test(<span class="str">'dashboard exibe dados do usuário'</span>, <span class="
         <div class="card-title">storageState — login reutilizável</div>
         <ul>
           <li>Permite <strong>fazer login uma única vez</strong> e reutilizar a sessão em todos os testes</li>
-          <li>Salva cookies e localStorage em um arquivo JSON (o arquivo é gerado automaticamente)</li>
+          <li>Salva cookies e localStorage em um arquivo JSON</li>
           <li>Cada teste começa já autenticado — muito mais rápido</li>
-          <li>Configurado via <strong>project setup</strong> no <code>playwright.config.ts</code></li>
-          <li>Ideal para suítes grandes que precisam de usuário logado</li>
-          <li>O JSON armazena apenas <strong>cookies</strong> e <strong>origins</strong> (localStorage) — não serve para dados de carrinho, produto, etc.</li>
+          <li>Configurado via <strong>project setup</strong> com <code>dependencies</code> no config</li>
+          <li>O JSON armazena apenas <strong>cookies</strong> e <strong>origins</strong> (localStorage)</li>
           <li>Documentação: <a href="https://playwright.dev/docs/auth" target="_blank" rel="noopener">playwright.dev/docs/auth</a></li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="card-title">Duas formas de fazer login no setup</div>
+        <div class="card-title">Login uma vez para toda a suíte</div>
         <ul>
-          <li><strong>Login via UI:</strong> simula o fluxo real — navega até a página, preenche campos, clica no botão. Mais lento, mas testa o fluxo completo</li>
-          <li><strong>Login via API:</strong> chama o endpoint de autenticação diretamente — muito mais rápido. Use <code>request.newContext()</code> para fazer a chamada</li>
-          <li>Ambas as formas salvam o estado com <code>storageState()</code> e o resultado é idêntico para os testes seguintes</li>
-          <li>Em projetos reais, <strong>login via API é o mais recomendado</strong> por ser mais rápido e estável</li>
-          <li>Configure via <code>projects</code> com <code>dependencies</code> (abordagem moderna) em vez de <code>globalSetup</code> (legado)</li>
+          <li>Crie um arquivo <code>auth.setup.ts</code> que faz login e salva o estado</li>
+          <li>Configure um project <code>'setup'</code> que roda antes dos outros</li>
+          <li>Projetos de teste usam <code>dependencies: ['setup']</code> e <code>storageState</code></li>
+          <li><strong>Login via API</strong> é mais rápido e estável que login via UI</li>
+          <li>Não use <code>globalSetup</code> (legado) — prefira a abordagem com projects</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div class="card">
+        <div class="card-title">Cookies e sessão</div>
+        <ul>
+          <li><code>storageState</code> captura cookies de autenticação e dados do localStorage</li>
+          <li>Não captura sessão server-side — se o servidor invalida, o setup precisa rodar novamente</li>
+          <li>Cookies têm data de expiração — configure TTL adequado no backend para testes</li>
+          <li>Adicione <code>playwright/.auth/</code> ao <code>.gitignore</code> — os JSONs contêm tokens</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Ambientes diferentes</div>
+        <ul>
+          <li>Use variáveis de ambiente para URLs e credenciais por ambiente</li>
+          <li><code>baseURL</code> pode ser dinâmica: <code>process.env.BASE_URL || 'http://localhost:3000'</code></li>
+          <li>Crie arquivos <code>.env.staging</code>, <code>.env.production</code> com dados específicos</li>
+          <li>Múltiplos perfis: <code>admin.json</code>, <code>user.json</code> com projects separados</li>
+          <li>Documentação: <a href="https://playwright.dev/docs/auth#multiple-signed-in-roles" target="_blank" rel="noopener">playwright.dev/docs/auth#multiple-signed-in-roles</a></li>
         </ul>
       </div>
     </div>
 
     <div class="code-block">
-      <pre><span class="cm">// playwright.config.ts — setup de autenticação com projects (abordagem moderna)</span>
+      <pre><span class="cm">// playwright.config.ts — setup de autenticação com projects</span>
 <span class="kw">import</span> { defineConfig } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
 
 <span class="kw">export default</span> <span class="fn">defineConfig</span>({
@@ -566,32 +651,17 @@ test(<span class="str">'dashboard exibe dados do usuário'</span>, <span class="
     </div>
 
     <div class="code-block">
-      <pre><span class="cm">// tests/setup/auth.setup.ts — Login via UI e salvar estado</span>
-<span class="kw">import</span> { test <span class="kw">as</span> setup } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
-
-<span class="kw">const</span> authFile = <span class="str">'playwright/.auth/session.json'</span>;
-
-setup(<span class="str">'fazer login'</span>, <span class="kw">async</span> ({ page }) => {
-  <span class="kw">await</span> page.<span class="fn">goto</span>(<span class="str">'https://exemplo.com/login'</span>);
-  <span class="kw">await</span> page.<span class="fn">getByLabel</span>(<span class="str">'E-mail'</span>).<span class="fn">fill</span>(<span class="str">'user@email.com'</span>);
-  <span class="kw">await</span> page.<span class="fn">getByLabel</span>(<span class="str">'Senha'</span>).<span class="fn">fill</span>(<span class="str">'senha123'</span>);
-  <span class="kw">await</span> page.<span class="fn">getByRole</span>(<span class="str">'button'</span>, { name: <span class="str">'Entrar'</span> }).<span class="fn">click</span>();
-  <span class="kw">await</span> page.<span class="fn">context</span>().<span class="fn">storageState</span>({ path: authFile });
-});</pre>
-    </div>
-
-    <div class="code-block">
-      <pre><span class="cm">// tests/setup/auth.setup.ts — Login via API (mais rápido)</span>
+      <pre><span class="cm">// tests/setup/auth.setup.ts — Login via API (recomendado)</span>
 <span class="kw">import</span> { test <span class="kw">as</span> setup, request } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
 
 <span class="kw">const</span> authFile = <span class="str">'playwright/.auth/session.json'</span>;
 
-setup(<span class="str">'fazer login via API'</span>, <span class="kw">async</span> ({ }) => {
+setup(<span class="str">'fazer login via API'</span>, <span class="kw">async</span> ({}) =&gt; {
   <span class="kw">const</span> apiContext = <span class="kw">await</span> request.<span class="fn">newContext</span>();
   <span class="kw">const</span> response = <span class="kw">await</span> apiContext.<span class="fn">post</span>(<span class="str">'https://exemplo.com/api/login'</span>, {
     data: {
-      email: <span class="str">'user@email.com'</span>,
-      password: <span class="str">'senha123'</span>,
+      email: process.env.TEST_USER_EMAIL,
+      password: process.env.TEST_USER_PASSWORD,
     },
   });
   <span class="kw">if</span> (!response.<span class="fn">ok</span>()) <span class="kw">throw new</span> <span class="fn">Error</span>(<span class="str">'Falha ao fazer login via API'</span>);
@@ -600,31 +670,8 @@ setup(<span class="str">'fazer login via API'</span>, <span class="kw">async</sp
 });</pre>
     </div>
 
-    <div class="content-grid">
-      <div class="card">
-        <div class="card-title">Múltiplos perfis (admin + user)</div>
-        <ul>
-          <li>Crie um setup separado e um <code>storageState</code> para cada perfil de usuário</li>
-          <li>Configure projects independentes — ex.: <code>'chromium-admin'</code> e <code>'chromium-user'</code></li>
-          <li>Cada spec importa o perfil correto via project ou fixture</li>
-          <li>Útil para: testar permissões, admin vs. usuário regular, fluxos de aprovação</li>
-          <li>Documentação: <a href="https://playwright.dev/docs/auth#multiple-signed-in-roles" target="_blank" rel="noopener">playwright.dev/docs/auth#multiple-signed-in-roles</a></li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Limitações do storageState</div>
-        <ul>
-          <li>Armazena <strong>apenas cookies e localStorage</strong> — dados de sessão server-side não são capturados</li>
-          <li>Não serve para salvar estado de carrinho de compras, dados de formulário ou fluxos multi-step</li>
-          <li>Para pular etapas de um fluxo (ex.: ir direto para checkout), use <strong>chamadas de API</strong> para preparar os dados</li>
-          <li>O JSON tem data de expiração dos cookies — se expirar, o setup precisa rodar novamente</li>
-        </ul>
-      </div>
-    </div>
-
     <div class="code-block">
-      <pre><span class="cm">// playwright.config.ts — múltiplos perfis de autenticação</span>
+      <pre><span class="cm">// playwright.config.ts — múltiplos perfis (admin + user)</span>
 <span class="kw">export default</span> <span class="fn">defineConfig</span>({
   projects: [
     { name: <span class="str">'setup-admin'</span>, testMatch: <span class="str">'**/admin.setup.ts'</span> },
@@ -643,109 +690,14 @@ setup(<span class="str">'fazer login via API'</span>, <span class="kw">async</sp
 });</pre>
     </div>
 
-    <div class="warn-box">
-      <div class="warn-box-title">⚠️ Cuidado</div>
-      <p>Adicione <code>playwright/.auth/</code> ao <code>.gitignore</code> — os JSONs contêm tokens de sessão. Nunca commite arquivos de estado de autenticação no repositório.</p>
-    </div>
-    <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ══════════ SEÇÃO 4 ══════════ -->
-<section class="content-section">
-  <div class="container">
-    <div class="section-number">04</div>
-    <div class="section-header">
-      <div class="section-icon">🛡️</div>
-      <div class="section-heading">
-        <h2>Testes Mais Estáveis</h2>
-        <div class="meta">
-          <span class="meta-chip chip-green">Estabilidade</span>
-          <span class="meta-chip chip-purple">Boas Práticas</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="content-grid">
-      <div class="card">
-        <div class="card-title">Esperas corretas e auto-waiting</div>
-        <ul>
-          <li>O Playwright já implementa <strong>auto-waiting</strong> na maioria das ações — consulte a <a href="https://playwright.dev/docs/actionability" target="_blank" rel="noopener">tabela de auto-waiting</a> para ver quais checks cada ação faz</li>
-          <li><strong>Nunca use</strong> <code>waitForTimeout()</code> — ele faz um "pause" fixo e torna o teste lento e instável</li>
-          <li>Use assertions com auto-retry (<code>expect</code>) — elas revalidam até o timeout configurado</li>
-          <li><code>waitForLoadState('networkidle')</code> — espera as requisições de rede terminarem</li>
-          <li><code>waitForResponse(url)</code> — espera uma resposta específica da API</li>
-          <li><code>waitForURL(url)</code> — espera a navegação chegar em uma URL</li>
-          <li>Alguns métodos como <code>fill()</code> não esperam por todos os events (ex.: <code>stable</code>) — isso é intencional. Se precisar, espere outro elemento antes</li>
-          <li>Documentação: <a href="https://playwright.dev/docs/actionability" target="_blank" rel="noopener">playwright.dev/docs/actionability</a></li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Interceptação de requests (mocks e route)</div>
-        <ul>
-          <li><code><a href="https://playwright.dev/docs/mock" target="_blank" rel="noopener">page.route()</a></code> permite interceptar e modificar requisições de rede</li>
-          <li><code>route.fulfill()</code> — retorna dados mockados para o browser</li>
-          <li><code>route.abort()</code> — bloqueia uma requisição (útil para bloquear analytics, imagens, etc.)</li>
-          <li><code>route.continue()</code> — deixa a requisição prosseguir (opcionalmente com headers modificados)</li>
-          <li>Torna os testes independentes do backend — simule erros, respostas lentas ou dados específicos</li>
-          <li>Pode criar uma classe <strong>NetworkInterceptor</strong> para gerenciar interceptações de forma reutilizável</li>
-          <li>Documentação: <a href="https://playwright.dev/docs/mock" target="_blank" rel="noopener">playwright.dev/docs/mock</a> | <a href="https://playwright.dev/docs/network" target="_blank" rel="noopener">playwright.dev/docs/network</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="code-block">
-      <pre><span class="cm">// Esperar network idle antes de fazer assertions</span>
-<span class="kw">await</span> page.<span class="fn">goto</span>(<span class="str">'/dashboard'</span>);
-<span class="kw">await</span> page.<span class="fn">waitForLoadState</span>(<span class="str">'networkidle'</span>);
-
-<span class="cm">// Esperar uma resposta específica da API</span>
-<span class="kw">const</span> response = <span class="kw">await</span> page.<span class="fn">waitForResponse</span>(<span class="str">'**/api/users'</span>);
-<span class="fn">expect</span>(response.<span class="fn">status</span>()).<span class="fn">toBe</span>(<span class="num">200</span>);
-
-<span class="cm">// Esperar navegação para URL específica</span>
-<span class="kw">await</span> page.<span class="fn">waitForURL</span>(<span class="str">'**/dashboard'</span>);
-
-<span class="cm">// Aguardar resposta da API antes de fazer assertion no DOM</span>
-<span class="kw">const</span> [resp] = <span class="kw">await</span> <span class="fn">Promise</span>.<span class="fn">all</span>([
-  page.<span class="fn">waitForResponse</span>(<span class="str">'**/api/products'</span>),
-  page.<span class="fn">getByRole</span>(<span class="str">'button'</span>, { name: <span class="str">'Carregar'</span> }).<span class="fn">click</span>(),
-]);
-
-<span class="cm">// Mock de uma API — retornar dados fixos</span>
-<span class="kw">await</span> page.<span class="fn">route</span>(<span class="str">'**/api/products'</span>, <span class="kw">async</span> (route) => {
-  <span class="kw">await</span> route.<span class="fn">fulfill</span>({
-    status: <span class="num">200</span>,
-    contentType: <span class="str">'application/json'</span>,
-    body: <span class="fn">JSON</span>.<span class="fn">stringify</span>([{ id: <span class="num">1</span>, name: <span class="str">'Produto Mock'</span> }]),
-  });
-});
-
-<span class="cm">// Mock de erro — simular falha na API</span>
-<span class="kw">await</span> page.<span class="fn">route</span>(<span class="str">'**/api/products'</span>, <span class="kw">async</span> (route) => {
-  <span class="kw">await</span> route.<span class="fn">fulfill</span>({ status: <span class="num">500</span> });
-});
-
-<span class="cm">// Bloquear requisições desnecessárias (analytics, imagens, etc.)</span>
-<span class="kw">await</span> page.<span class="fn">route</span>(<span class="str">'**/*.{png,jpg,jpeg}'</span>, (route) => route.<span class="fn">abort</span>());
-<span class="kw">await</span> page.<span class="fn">route</span>(<span class="str">'**/analytics/**'</span>, (route) => route.<span class="fn">abort</span>());</pre>
-    </div>
-
     <div class="remember-box">
       <div class="remember-box-title">💡 Para lembrar</div>
-      <p>Mocks são ferramentas poderosas, mas use com moderação. Testes com mock validam o frontend isoladamente. Mantenha também testes E2E sem mock para garantir a integração real com o backend. Você pode criar uma classe <strong>NetworkInterceptor</strong> reutilizável para centralizar as interceptações mais comuns do projeto.</p>
+      <p>Login via API é o método mais recomendado para projetos reais — é rápido, estável e não depende da UI de login funcionar. Reserve o teste de login via UI para um único spec dedicado. Use <code>storageState</code> para todos os outros testes que precisam de usuário autenticado.</p>
     </div>
 
-    <div class="practice-box">
-      <div class="practice-box-title">🏠 Para praticar em casa</div>
-      <ul>
-        <li>Crie um teste que intercepta uma API e retorna dados mockados — valide que a UI exibe os dados corretos</li>
-        <li>Simule um erro 500 na API e verifique se a mensagem de erro é exibida na tela</li>
-        <li>Use <code>waitForResponse()</code> para esperar uma chamada API antes de fazer assertions</li>
-      </ul>
+    <div class="warn-box">
+      <div class="warn-box-title">⚠️ Nunca commite arquivos de autenticação</div>
+      <p>Adicione <code>playwright/.auth/</code> ao <code>.gitignore</code>. Os JSONs de <code>storageState</code> contêm tokens de sessão reais. Use variáveis de ambiente (<code>.env</code>) para credenciais — nunca hardcode senhas no código.</p>
     </div>
     <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
@@ -760,57 +712,117 @@ setup(<span class="str">'fazer login via API'</span>, <span class="kw">async</sp
     <div class="section-header">
       <div class="section-icon">👥</div>
       <div class="section-heading">
-        <h2>Múltiplos Contextos e Cenários</h2>
+        <h2>Fluxos Complexos e Múltiplos Contextos</h2>
         <div class="meta">
           <span class="meta-chip chip-green">Avançado</span>
-          <span class="meta-chip chip-blue">Prática</span>
+          <span class="meta-chip chip-purple">Prática</span>
         </div>
       </div>
     </div>
 
     <div class="content-grid">
       <div class="card">
-        <div class="card-title">Multi-user — dois usuários no mesmo teste</div>
-        <ul>
-          <li>Crie múltiplos <strong>browser contexts</strong> no mesmo teste</li>
-          <li>Cada contexto tem seus próprios cookies, sessão e storage</li>
-          <li>Ideal para testar: chat em tempo real, permissões, colaboração</li>
-          <li>Ambos os usuários rodam no mesmo browser (sem custo extra)</li>
-          <li>Use <code>browser.newContext()</code> para criar contextos independentes</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Multi-tab e popups</div>
+        <div class="card-title">Multi-page e Popups</div>
         <ul>
           <li>O Playwright intercepta novas abas e popups automaticamente</li>
           <li>Use <code>page.waitForEvent('popup')</code> para capturar a nova aba</li>
           <li>Cada aba é uma <code>Page</code> independente — mesmos métodos de interação</li>
           <li>Útil para: OAuth, links que abrem em nova aba, janelas de pagamento</li>
           <li>Não precisa de window handle como em Selenium</li>
+          <li>Documentação: <a href="https://playwright.dev/docs/pages" target="_blank" rel="noopener">playwright.dev/docs/pages</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Multi-step flows (checkout, onboarding)</div>
+        <ul>
+          <li>Use <code>test.describe.serial()</code> quando steps dependem um do outro</li>
+          <li>Prefira preparar dados via API e testar apenas a etapa que interessa</li>
+          <li>Não crie um teste enorme — divida em steps menores com describe.serial</li>
+          <li>Use <code>storageState</code> ou API para pular etapas anteriores</li>
+          <li>Valide cada step isoladamente quando possível</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div class="card">
+        <div class="card-title">Multi-user (conceito)</div>
+        <ul>
+          <li>Crie múltiplos <strong>browser contexts</strong> no mesmo teste</li>
+          <li>Cada contexto tem seus próprios cookies, sessão e storage</li>
+          <li>Ideal para testar: chat em tempo real, permissões, aprovações</li>
+          <li>Ambos os usuários rodam no mesmo browser (sem custo extra)</li>
+          <li>Use <code>browser.newContext()</code> para criar contextos independentes</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Context vs Page</div>
+        <ul>
+          <li><strong>Browser Context</strong> = sessão isolada (cookies, storage, permissions)</li>
+          <li><strong>Page</strong> = uma aba dentro de um context</li>
+          <li>Um context pode ter múltiplas pages (abas)</li>
+          <li>Pages no mesmo context compartilham cookies e sessão</li>
+          <li>Use contextos separados para simular usuários diferentes</li>
+          <li>Use pages separadas para simular múltiplas abas do mesmo usuário</li>
         </ul>
       </div>
     </div>
 
     <div class="code-block">
-      <pre><span class="cm">// Multi-user — dois usuários simultâneos</span>
-<span class="kw">const</span> context1 = <span class="kw">await</span> browser.<span class="fn">newContext</span>();
-<span class="kw">const</span> context2 = <span class="kw">await</span> browser.<span class="fn">newContext</span>();
-<span class="kw">const</span> userA = <span class="kw">await</span> context1.<span class="fn">newPage</span>();
-<span class="kw">const</span> userB = <span class="kw">await</span> context2.<span class="fn">newPage</span>();
+      <pre><span class="cm">// Multi-user — dois usuários simultâneos no mesmo teste</span>
+test(<span class="str">'chat entre dois usuários'</span>, <span class="kw">async</span> ({ browser }) =&gt; {
+  <span class="kw">const</span> context1 = <span class="kw">await</span> browser.<span class="fn">newContext</span>();
+  <span class="kw">const</span> context2 = <span class="kw">await</span> browser.<span class="fn">newContext</span>();
+  <span class="kw">const</span> userA = <span class="kw">await</span> context1.<span class="fn">newPage</span>();
+  <span class="kw">const</span> userB = <span class="kw">await</span> context2.<span class="fn">newPage</span>();
 
-<span class="kw">await</span> userA.<span class="fn">goto</span>(<span class="str">'/chat'</span>);
-<span class="kw">await</span> userB.<span class="fn">goto</span>(<span class="str">'/chat'</span>);
-<span class="kw">await</span> userA.<span class="fn">getByLabel</span>(<span class="str">'Mensagem'</span>).<span class="fn">fill</span>(<span class="str">'Olá!'</span>);
-<span class="kw">await</span> userA.<span class="fn">getByRole</span>(<span class="str">'button'</span>, { name: <span class="str">'Enviar'</span> }).<span class="fn">click</span>();
-<span class="kw">await</span> <span class="fn">expect</span>(userB.<span class="fn">getByText</span>(<span class="str">'Olá!'</span>)).<span class="fn">toBeVisible</span>();
+  <span class="kw">await</span> userA.<span class="fn">goto</span>(<span class="str">'/chat'</span>);
+  <span class="kw">await</span> userB.<span class="fn">goto</span>(<span class="str">'/chat'</span>);
+  <span class="kw">await</span> userA.<span class="fn">getByLabel</span>(<span class="str">'Mensagem'</span>).<span class="fn">fill</span>(<span class="str">'Olá!'</span>);
+  <span class="kw">await</span> userA.<span class="fn">getByRole</span>(<span class="str">'button'</span>, { name: <span class="str">'Enviar'</span> }).<span class="fn">click</span>();
+  <span class="kw">await</span> <span class="fn">expect</span>(userB.<span class="fn">getByText</span>(<span class="str">'Olá!'</span>)).<span class="fn">toBeVisible</span>();
+});</pre>
+    </div>
 
-<span class="cm">// Multi-tab — capturar popup</span>
-<span class="kw">const</span> [popup] = <span class="kw">await</span> <span class="fn">Promise</span>.<span class="fn">all</span>([
-  page.<span class="fn">waitForEvent</span>(<span class="str">'popup'</span>),
-  page.<span class="fn">getByText</span>(<span class="str">'Abrir em nova aba'</span>).<span class="fn">click</span>(),
-]);
-<span class="kw">await</span> <span class="fn">expect</span>(popup).<span class="fn">toHaveURL</span>(<span class="str">/nova-pagina/</span>);</pre>
+    <div class="code-block">
+      <pre><span class="cm">// Multi-tab — capturar popup/nova aba</span>
+test(<span class="str">'link abre em nova aba'</span>, <span class="kw">async</span> ({ page }) =&gt; {
+  <span class="kw">const</span> [popup] = <span class="kw">await</span> <span class="fn">Promise</span>.<span class="fn">all</span>([
+    page.<span class="fn">waitForEvent</span>(<span class="str">'popup'</span>),
+    page.<span class="fn">getByText</span>(<span class="str">'Abrir em nova aba'</span>).<span class="fn">click</span>(),
+  ]);
+  <span class="kw">await</span> <span class="fn">expect</span>(popup).<span class="fn">toHaveURL</span>(<span class="str">/nova-pagina/</span>);
+  <span class="kw">await</span> <span class="fn">expect</span>(popup.<span class="fn">getByRole</span>(<span class="str">'heading'</span>)).<span class="fn">toBeVisible</span>();
+});</pre>
+    </div>
+
+    <div class="code-block">
+      <pre><span class="cm">// Multi-step flow — checkout com describe.serial</span>
+test.<span class="fn">describe</span>.<span class="fn">serial</span>(<span class="str">'fluxo de checkout'</span>, () =&gt; {
+  test(<span class="str">'adicionar produto ao carrinho'</span>, <span class="kw">async</span> ({ page }) =&gt; {
+    <span class="kw">await</span> page.<span class="fn">goto</span>(<span class="str">'/products'</span>);
+    <span class="kw">await</span> page.<span class="fn">getByRole</span>(<span class="str">'button'</span>, { name: <span class="str">'Adicionar'</span> }).<span class="fn">click</span>();
+    <span class="kw">await</span> <span class="fn">expect</span>(page.<span class="fn">getByTestId</span>(<span class="str">'cart-count'</span>)).<span class="fn">toHaveText</span>(<span class="str">'1'</span>);
+  });
+
+  test(<span class="str">'preencher endereço'</span>, <span class="kw">async</span> ({ page }) =&gt; {
+    <span class="kw">await</span> page.<span class="fn">goto</span>(<span class="str">'/checkout/address'</span>);
+    <span class="kw">await</span> page.<span class="fn">getByLabel</span>(<span class="str">'CEP'</span>).<span class="fn">fill</span>(<span class="str">'01310-100'</span>);
+    <span class="kw">await</span> page.<span class="fn">getByRole</span>(<span class="str">'button'</span>, { name: <span class="str">'Continuar'</span> }).<span class="fn">click</span>();
+  });
+
+  test(<span class="str">'finalizar compra'</span>, <span class="kw">async</span> ({ page }) =&gt; {
+    <span class="kw">await</span> page.<span class="fn">getByRole</span>(<span class="str">'button'</span>, { name: <span class="str">'Finalizar'</span> }).<span class="fn">click</span>();
+    <span class="kw">await</span> <span class="fn">expect</span>(page.<span class="fn">getByText</span>(<span class="str">'Pedido confirmado'</span>)).<span class="fn">toBeVisible</span>();
+  });
+});</pre>
+    </div>
+
+    <div class="remember-box">
+      <div class="remember-box-title">💡 Para lembrar</div>
+      <p><strong>Context</strong> = sessão isolada (cookies, storage). <strong>Page</strong> = aba dentro de um context. Use contextos diferentes para simular usuários diferentes. Use pages diferentes (no mesmo context) para simular múltiplas abas do mesmo usuário.</p>
     </div>
 
     <div class="practice-box">
@@ -818,6 +830,7 @@ setup(<span class="str">'fazer login via API'</span>, <span class="kw">async</sp
       <ul>
         <li>Crie um teste com dois contextos simulando dois usuários acessando a mesma página</li>
         <li>Teste um link que abre em nova aba e valide o conteúdo da popup</li>
+        <li>Crie um fluxo multi-step com <code>describe.serial</code></li>
       </ul>
     </div>
     <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
@@ -831,70 +844,148 @@ setup(<span class="str">'fazer login via API'</span>, <span class="kw">async</sp
   <div class="container">
     <div class="section-number">06</div>
     <div class="section-header">
-      <div class="section-icon">📱</div>
+      <div class="section-icon">🌐</div>
       <div class="section-heading">
-        <h2>Mobile e Emulação</h2>
+        <h2>Network Interception e API</h2>
         <div class="meta">
-          <span class="meta-chip chip-green">Prática</span>
-          <span class="meta-chip chip-blue">Devices</span>
+          <span class="meta-chip chip-green">Avançado</span>
+          <span class="meta-chip chip-purple">Mocks</span>
         </div>
       </div>
     </div>
 
     <div class="content-grid">
       <div class="card">
-        <div class="card-title">Device presets</div>
+        <div class="card-title">Interceptar requests (route)</div>
         <ul>
-          <li>O Playwright traz <strong>presets prontos</strong> para dezenas de dispositivos</li>
-          <li>Emula viewport, user-agent, touch, device scale factor</li>
-          <li>Dispositivos comuns: iPhone 14, Pixel 7, iPad, Galaxy S9+</li>
-          <li>Configurável por projeto no <code>playwright.config.ts</code></li>
-          <li>Lista completa: <a href="https://playwright.dev/docs/emulation#devices" target="_blank" rel="noopener">playwright.dev/docs/emulation#devices</a></li>
+          <li><code>page.route()</code> permite interceptar e modificar requisições de rede</li>
+          <li><code>route.fulfill()</code> — retorna dados mockados para o browser</li>
+          <li><code>route.abort()</code> — bloqueia uma requisição (analytics, imagens, etc.)</li>
+          <li><code>route.continue()</code> — deixa a requisição prosseguir (com headers modificados)</li>
+          <li>Pode criar uma classe <strong>NetworkInterceptor</strong> reutilizável</li>
+          <li>Documentação: <a href="https://playwright.dev/docs/mock" target="_blank" rel="noopener">playwright.dev/docs/mock</a></li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="card-title">Outras emulações</div>
+        <div class="card-title">Mockar respostas</div>
         <ul>
-          <li><code>locale</code> — idioma e formatação de datas/moeda</li>
-          <li><code>geolocation</code> — simular localização GPS</li>
-          <li><code>permissions</code> — conceder permissões (câmera, microfone, geolocalização)</li>
-          <li><code>colorScheme</code> — testar dark mode e light mode</li>
-          <li><code>timezoneId</code> — simular fuso horário diferente</li>
+          <li>Retorne dados fixos para isolar o frontend do backend</li>
+          <li>Simule erros (500, 404, timeout) para testar tratamento de falhas</li>
+          <li>Simule respostas lentas para testar loading states</li>
+          <li>Útil para testar cenários difíceis de reproduzir (ex.: servidor fora do ar)</li>
+          <li>Mantenha arquivos JSON com mocks para reutilizar entre testes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div class="card">
+        <div class="card-title">Evitar dependência de backend</div>
+        <ul>
+          <li>Mocks permitem rodar testes de frontend <strong>sem backend disponível</strong></li>
+          <li>Útil em CI quando o backend está em outro time/pipeline</li>
+          <li>Combine: testes com mock (isolamento) + testes E2E sem mock (integração real)</li>
+          <li>Use mocks para cenários de erro que são difíceis de gerar no backend</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Testes de API com request</div>
+        <ul>
+          <li>Playwright tem suporte nativo a testes de API com <code>request</code> fixture</li>
+          <li>Use <code>request.get()</code>, <code>request.post()</code>, etc. sem precisar de browser</li>
+          <li>Ideal para: criar dados, validar backend, setup de testes</li>
+          <li>Mais rápido que testes via UI — não precisa renderizar página</li>
+          <li>Documentação: <a href="https://playwright.dev/docs/api-testing" target="_blank" rel="noopener">playwright.dev/docs/api-testing</a></li>
         </ul>
       </div>
     </div>
 
     <div class="code-block">
-      <pre><span class="cm">// playwright.config.ts — projeto mobile</span>
-<span class="kw">import</span> { defineConfig, devices } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
-
-<span class="kw">export default</span> <span class="fn">defineConfig</span>({
-  projects: [
-    { name: <span class="str">'Desktop Chrome'</span>, use: { ...devices[<span class="str">'Desktop Chrome'</span>] } },
-    { name: <span class="str">'Mobile Safari'</span>, use: { ...devices[<span class="str">'iPhone 14'</span>] } },
-    { name: <span class="str">'Mobile Android'</span>, use: { ...devices[<span class="str">'Pixel 7'</span>] } },
-  ],
+      <pre><span class="cm">// Interceptar e mockar uma API</span>
+<span class="kw">await</span> page.<span class="fn">route</span>(<span class="str">'**/api/products'</span>, <span class="kw">async</span> (route) =&gt; {
+  <span class="kw">await</span> route.<span class="fn">fulfill</span>({
+    status: <span class="num">200</span>,
+    contentType: <span class="str">'application/json'</span>,
+    body: <span class="fn">JSON</span>.<span class="fn">stringify</span>([
+      { id: <span class="num">1</span>, name: <span class="str">'Produto Mock'</span>, price: <span class="num">29.90</span> },
+      { id: <span class="num">2</span>, name: <span class="str">'Outro Produto'</span>, price: <span class="num">49.90</span> },
+    ]),
+  });
 });
 
-<span class="cm">// Emulação inline no teste</span>
-<span class="kw">const</span> context = <span class="kw">await</span> browser.<span class="fn">newContext</span>({
-  ...devices[<span class="str">'iPhone 14'</span>],
-  locale: <span class="str">'pt-BR'</span>,
-  geolocation: { latitude: <span class="num">-23.55</span>, longitude: <span class="num">-46.63</span> },
-  permissions: [<span class="str">'geolocation'</span>],
-  colorScheme: <span class="str">'dark'</span>,
+<span class="cm">// Simular erro 500</span>
+<span class="kw">await</span> page.<span class="fn">route</span>(<span class="str">'**/api/products'</span>, <span class="kw">async</span> (route) =&gt; {
+  <span class="kw">await</span> route.<span class="fn">fulfill</span>({ status: <span class="num">500</span>, body: <span class="str">'Internal Server Error'</span> });
+});
+
+<span class="cm">// Bloquear requisições desnecessárias</span>
+<span class="kw">await</span> page.<span class="fn">route</span>(<span class="str">'**/*.{png,jpg,jpeg}'</span>, (route) =&gt; route.<span class="fn">abort</span>());
+<span class="kw">await</span> page.<span class="fn">route</span>(<span class="str">'**/analytics/**'</span>, (route) =&gt; route.<span class="fn">abort</span>());</pre>
+    </div>
+
+    <div class="code-block">
+      <pre><span class="cm">// NetworkInterceptor — classe reutilizável para interceptações</span>
+<span class="kw">import</span> { type Page } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+
+<span class="kw">export class</span> <span class="fn">NetworkInterceptor</span> {
+  <span class="kw">constructor</span>(<span class="kw">private</span> page: Page) {}
+
+  <span class="kw">async</span> <span class="fn">mockProducts</span>(products: <span class="str">any</span>[]) {
+    <span class="kw">await</span> <span class="kw">this</span>.page.<span class="fn">route</span>(<span class="str">'**/api/products'</span>, <span class="kw">async</span> (route) =&gt; {
+      <span class="kw">await</span> route.<span class="fn">fulfill</span>({
+        status: <span class="num">200</span>,
+        contentType: <span class="str">'application/json'</span>,
+        body: <span class="fn">JSON</span>.<span class="fn">stringify</span>(products),
+      });
+    });
+  }
+
+  <span class="kw">async</span> <span class="fn">mockError</span>(url: <span class="str">string</span>, status: <span class="str">number</span>) {
+    <span class="kw">await</span> <span class="kw">this</span>.page.<span class="fn">route</span>(url, <span class="kw">async</span> (route) =&gt; {
+      <span class="kw">await</span> route.<span class="fn">fulfill</span>({ status });
+    });
+  }
+
+  <span class="kw">async</span> <span class="fn">blockAnalytics</span>() {
+    <span class="kw">await</span> <span class="kw">this</span>.page.<span class="fn">route</span>(<span class="str">'**/analytics/**'</span>, (route) =&gt; route.<span class="fn">abort</span>());
+  }
+}</pre>
+    </div>
+
+    <div class="code-block">
+      <pre><span class="cm">// Testes de API com request fixture (sem browser)</span>
+<span class="kw">import</span> { test, expect } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+
+test(<span class="str">'API retorna lista de produtos'</span>, <span class="kw">async</span> ({ request }) =&gt; {
+  <span class="kw">const</span> response = <span class="kw">await</span> request.<span class="fn">get</span>(<span class="str">'/api/products'</span>);
+  <span class="fn">expect</span>(response.<span class="fn">status</span>()).<span class="fn">toBe</span>(<span class="num">200</span>);
+  <span class="kw">const</span> data = <span class="kw">await</span> response.<span class="fn">json</span>();
+  <span class="fn">expect</span>(data.length).<span class="fn">toBeGreaterThan</span>(<span class="num">0</span>);
+});
+
+test(<span class="str">'criar produto via API'</span>, <span class="kw">async</span> ({ request }) =&gt; {
+  <span class="kw">const</span> response = <span class="kw">await</span> request.<span class="fn">post</span>(<span class="str">'/api/products'</span>, {
+    data: { name: <span class="str">'Novo Produto'</span>, price: <span class="num">99.90</span> },
+  });
+  <span class="fn">expect</span>(response.<span class="fn">status</span>()).<span class="fn">toBe</span>(<span class="num">201</span>);
 });</pre>
     </div>
 
     <div class="remember-box">
       <div class="remember-box-title">💡 Para lembrar</div>
-      <p>A emulação mobile do Playwright <strong>não é um dispositivo real</strong> — ela simula as características do device (viewport, user-agent, touch) no Chromium/WebKit. É como usar o DevTools do Chrome no modo responsivo. Para testes de performance ou bugs específicos de hardware, use dispositivos reais, BrowserStack ou farms de dispositivos.</p>
+      <p>Mocks são poderosos, mas use com moderação. Testes com mock validam o frontend isoladamente — mantenha também testes E2E sem mock para garantir a integração real. Centralize interceptações comuns em uma classe <strong>NetworkInterceptor</strong> reutilizável.</p>
     </div>
 
-    <div class="info-box">
-      <div class="info-box-title">📱 Testes nativos em mobile</div>
-      <p>O Playwright não roda testes em aplicações mobile nativas (iOS/Android). Para testes mobile nativos, considere frameworks como <strong>Robot Framework</strong> (que pode integrar com Playwright) ou ferramentas especializadas como Appium. Documentação de emulação: <a href="https://playwright.dev/docs/emulation" target="_blank" rel="noopener">playwright.dev/docs/emulation</a></p>
+    <div class="practice-box">
+      <div class="practice-box-title">🏠 Para praticar em casa</div>
+      <ul>
+        <li>Crie um teste que intercepta uma API e retorna dados mockados</li>
+        <li>Simule um erro 500 e verifique se a mensagem de erro aparece na UI</li>
+        <li>Crie uma classe NetworkInterceptor com métodos reutilizáveis</li>
+        <li>Faça um teste de API puro usando a fixture <code>request</code></li>
+      </ul>
     </div>
     <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
@@ -907,99 +998,135 @@ setup(<span class="str">'fazer login via API'</span>, <span class="kw">async</sp
   <div class="container">
     <div class="section-number">07</div>
     <div class="section-header">
-      <div class="section-icon">🚀</div>
+      <div class="section-icon">📦</div>
       <div class="section-heading">
-        <h2>CI com GitHub Actions</h2>
+        <h2>Lidando com Dados</h2>
         <div class="meta">
-          <span class="meta-chip chip-green">CI/CD</span>
-          <span class="meta-chip chip-blue">GitHub</span>
+          <span class="meta-chip chip-green">Dados</span>
+          <span class="meta-chip chip-purple">Estratégias</span>
         </div>
       </div>
     </div>
 
     <div class="content-grid">
       <div class="card">
-        <div class="card-title">Por que rodar testes em CI</div>
+        <div class="card-title">Estratégias para dados de teste</div>
         <ul>
-          <li>Garante que <strong>cada PR é testada automaticamente</strong></li>
-          <li>Evita que bugs cheguem à branch principal</li>
-          <li>Testes rodam em ambiente limpo e consistente</li>
-          <li>Resultados e artefatos ficam acessíveis no GitHub</li>
-          <li>Feedback rápido para o time de desenvolvimento</li>
-          <li>Tudo que estiver no <code>playwright.config.ts</code> (trace, retries, workers, reporters) reflete na pipeline</li>
+          <li><strong>.env</strong> — para credenciais e URLs por ambiente (nunca hardcode senhas)</li>
+          <li><strong>JSON (dicionário de dados)</strong> — para dados estáticos reutilizáveis entre testes</li>
+          <li><strong>APIs</strong> — para criar/limpar dados dinamicamente antes de cada teste</li>
+          <li><strong>Mock</strong> — para isolar o frontend e simular cenários específicos</li>
+          <li>Combine estratégias conforme a necessidade de cada teste</li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="card-title">GitHub Actions — setup</div>
+        <div class="card-title">Quando usar cada estratégia</div>
         <ul>
-          <li>O Playwright oferece um workflow pronto na instalação (<code>npm init playwright@latest</code>)</li>
-          <li>Arquivo: <code>.github/workflows/playwright.yml</code></li>
-          <li>Instala dependências, browsers e roda os testes</li>
-          <li>Upload automático do relatório HTML como artefato</li>
-          <li>Roda em Ubuntu por padrão (mais rápido e barato)</li>
-          <li>Use o reporter <code>junit</code> para ver resultados direto no PR do GitHub</li>
-          <li>Documentação: <a href="https://playwright.dev/docs/ci-intro" target="_blank" rel="noopener">playwright.dev/docs/ci-intro</a></li>
+          <li><strong>.env:</strong> credenciais, tokens, URLs base, feature flags</li>
+          <li><strong>JSON:</strong> dados de formulário, listas de produtos, cenários parametrizados</li>
+          <li><strong>API:</strong> criar usuário antes do teste, limpar dados no teardown</li>
+          <li><strong>Mock:</strong> cenários difíceis de reproduzir, testar erros, isolar frontend</li>
+          <li>Para testes paralelos, cada teste deve ter dados únicos — evite compartilhar</li>
         </ul>
       </div>
     </div>
 
     <div class="code-block">
-      <pre><span class="cm"># .github/workflows/playwright.yml</span>
-name: Playwright Tests
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+      <pre><span class="cm">// .env — credenciais e configuração por ambiente</span>
+BASE_URL=https://staging.exemplo.com
+TEST_USER_EMAIL=qa@exemplo.com
+TEST_USER_PASSWORD=SenhaSegura123!
+API_TOKEN=token-de-teste-staging
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: <span class="num">20</span>
-      - name: Install dependencies
-        run: npm ci
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
-      - uses: actions/upload-artifact@v4
-        if: ${{ !cancelled() }}
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: <span class="num">30</span></pre>
+<span class="cm">// playwright.config.ts — usando .env</span>
+<span class="kw">import</span> { defineConfig } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+<span class="kw">import</span> dotenv <span class="kw">from</span> <span class="str">'dotenv'</span>;
+
+dotenv.<span class="fn">config</span>();
+
+<span class="kw">export default</span> <span class="fn">defineConfig</span>({
+  use: {
+    baseURL: process.env.BASE_URL,
+  },
+});</pre>
     </div>
 
-    <div class="content-grid">
-      <div class="card">
-        <div class="card-title">Outras ferramentas de CI</div>
-        <ul>
-          <li><strong>GitLab CI:</strong> usa <code>.gitlab-ci.yml</code> com <code>stages</code> e <code>needs</code> em vez de <code>jobs</code>. Pode precisar configurar workers/CPU via Kubernetes ou runners</li>
-          <li><strong>CircleCI:</strong> usa <code>.circleci/config.yml</code> — estrutura similar mas com terminologia própria</li>
-          <li><strong>Jenkins:</strong> use <code>Jenkinsfile</code> com pipeline declarativa ou scripted</li>
-          <li>Consulte sempre a documentação da ferramenta + <a href="https://playwright.dev/docs/ci" target="_blank" rel="noopener">playwright.dev/docs/ci</a> para ver exemplos específicos</li>
-        </ul>
-      </div>
+    <div class="code-block">
+      <pre><span class="cm">// data/users.json — dicionário de dados (JSON)</span>
+{
+  <span class="str">"validUser"</span>: {
+    <span class="str">"email"</span>: <span class="str">"qa@exemplo.com"</span>,
+    <span class="str">"password"</span>: <span class="str">"SenhaSegura123!"</span>,
+    <span class="str">"name"</span>: <span class="str">"QA User"</span>
+  },
+  <span class="str">"invalidUser"</span>: {
+    <span class="str">"email"</span>: <span class="str">"invalid@exemplo.com"</span>,
+    <span class="str">"password"</span>: <span class="str">"wrong"</span>
+  },
+  <span class="str">"products"</span>: [
+    { <span class="str">"name"</span>: <span class="str">"Produto A"</span>, <span class="str">"price"</span>: <span class="num">29.90</span> },
+    { <span class="str">"name"</span>: <span class="str">"Produto B"</span>, <span class="str">"price"</span>: <span class="num">49.90</span> }
+  ]
+}
 
-      <div class="card">
-        <div class="card-title">Merge de relatórios e dicas avançadas</div>
-        <ul>
-          <li>Se a pipeline roda em <strong>múltiplos jobs</strong> (sharding), use <code>npx playwright merge-reports</code> para combinar os relatórios — veja <a href="https://playwright.dev/docs/test-sharding#merge-reports-from-multiple-shards" target="_blank" rel="noopener">docs/test-sharding</a></li>
-          <li>Configure <code>retention-days</code> para controlar por quantos dias os artefatos ficam disponíveis (padrão GitHub: 30 dias)</li>
-          <li>Entenda a infra de CI da sua empresa — o número de <code>workers</code> depende dos recursos alocados (CPU, memória), não apenas da configuração do Playwright</li>
-          <li>Em ambientes com Kubernetes, pode ser necessário configurar <code>cpu requests</code> separadamente para garantir que os workers tenham recursos suficientes</li>
-        </ul>
-      </div>
+<span class="cm">// tests/login.spec.ts — usando dados do JSON</span>
+<span class="kw">import</span> testData <span class="kw">from</span> <span class="str">'../data/users.json'</span>;
+
+test(<span class="str">'login com dados do dicionário'</span>, <span class="kw">async</span> ({ page }) =&gt; {
+  <span class="kw">const</span> { email, password } = testData.validUser;
+  <span class="kw">await</span> page.<span class="fn">getByLabel</span>(<span class="str">'E-mail'</span>).<span class="fn">fill</span>(email);
+  <span class="kw">await</span> page.<span class="fn">getByLabel</span>(<span class="str">'Senha'</span>).<span class="fn">fill</span>(password);
+});</pre>
     </div>
 
-    <div class="info-box">
-      <div class="info-box-title">📁 Dica</div>
-      <p>Use <code>if: ${{ !cancelled() }}</code> no upload do relatório para garantir que ele seja salvo mesmo quando os testes falham. Assim você pode diagnosticar falhas diretamente no GitHub. Combine com o reporter <code>junit</code> para ver resultados inline nos PRs.</p>
+    <div class="code-block">
+      <pre><span class="cm">// utils/api-helpers.ts — criar/limpar dados via API</span>
+<span class="kw">import</span> { APIRequestContext } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+
+<span class="kw">export async function</span> <span class="fn">createUser</span>(request: APIRequestContext, data: <span class="str">any</span>) {
+  <span class="kw">const</span> response = <span class="kw">await</span> request.<span class="fn">post</span>(<span class="str">'/api/users'</span>, { data });
+  <span class="kw">return</span> response.<span class="fn">json</span>();
+}
+
+<span class="kw">export async function</span> <span class="fn">deleteUser</span>(request: APIRequestContext, userId: <span class="str">string</span>) {
+  <span class="kw">await</span> request.<span class="fn">delete</span>(<span class="str">`/api/users/${userId}`</span>);
+}
+
+<span class="cm">// Usando no teste com fixture</span>
+test(<span class="str">'criar e validar usuário'</span>, <span class="kw">async</span> ({ page, request }) =&gt; {
+  <span class="cm">// Setup: criar dados via API</span>
+  <span class="kw">const</span> user = <span class="kw">await</span> <span class="fn">createUser</span>(request, {
+    email: <span class="str">`test-${Date.now()}@example.com`</span>,
+    name: <span class="str">'Test User'</span>,
+  });
+
+  <span class="cm">// Teste: validar na UI</span>
+  <span class="kw">await</span> page.<span class="fn">goto</span>(<span class="str">`/users/${user.id}`</span>);
+  <span class="kw">await</span> <span class="fn">expect</span>(page.<span class="fn">getByText</span>(user.name)).<span class="fn">toBeVisible</span>();
+
+  <span class="cm">// Teardown: limpar dados</span>
+  <span class="kw">await</span> <span class="fn">deleteUser</span>(request, user.id);
+});</pre>
+    </div>
+
+    <div class="remember-box">
+      <div class="remember-box-title">💡 Para lembrar</div>
+      <p>A regra de ouro: <strong>.env</strong> para credenciais, <strong>JSON</strong> para dados estáticos, <strong>API</strong> para criar/limpar dados dinâmicos, <strong>Mock</strong> para isolar e simular cenários. Nunca hardcode senhas ou tokens no código — use variáveis de ambiente.</p>
+    </div>
+
+    <div class="warn-box">
+      <div class="warn-box-title">⚠️ Dados compartilhados causam flaky tests</div>
+      <p>Quando testes rodam em paralelo e compartilham os mesmos dados (ex.: mesmo usuário, mesmo produto), podem ocorrer conflitos. Cada teste deve criar seus próprios dados ou usar dados únicos gerados dinamicamente (ex.: com timestamp ou Faker.js).</p>
+    </div>
+
+    <div class="practice-box">
+      <div class="practice-box-title">🏠 Para praticar em casa</div>
+      <ul>
+        <li>Crie um arquivo <code>.env</code> com credenciais e use no <code>playwright.config.ts</code></li>
+        <li>Crie um dicionário de dados em JSON e importe em um teste</li>
+        <li>Faça um teste que cria dados via API no setup e limpa no teardown</li>
+      </ul>
     </div>
     <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
@@ -1012,131 +1139,119 @@ jobs:
   <div class="container">
     <div class="section-number">08</div>
     <div class="section-header">
-      <div class="section-icon">✨</div>
+      <div class="section-icon">💬</div>
       <div class="section-heading">
-        <h2>Boas Práticas Reais</h2>
+        <h2>Integrações com Slack</h2>
         <div class="meta">
-          <span class="meta-chip chip-green">Boas Práticas</span>
-          <span class="meta-chip chip-purple">Produção</span>
+          <span class="meta-chip chip-green">Integração</span>
+          <span class="meta-chip chip-purple">Notificações</span>
         </div>
       </div>
     </div>
 
     <div class="content-grid">
       <div class="card">
-        <div class="card-title">Estrutura de pastas recomendada</div>
+        <div class="card-title">Integração prática com Slack</div>
         <ul>
-          <li><code>tests/</code> — arquivos <code>.spec.ts</code> organizados por funcionalidade</li>
-          <li><code>pages/</code> — Page Objects separados por página ou componente</li>
-          <li><code>fixtures/</code> — fixtures customizadas reutilizáveis</li>
-          <li><code>utils/</code> — helpers, dados de teste, constantes, data factory</li>
-          <li><code>playwright.config.ts</code> — na raiz do projeto</li>
-          <li>Comece simples e refatore à medida que o projeto cresce — não tente criar toda a estrutura no dia 1</li>
-          <li>Documentação: <a href="https://playwright.dev/docs/best-practices" target="_blank" rel="noopener">playwright.dev/docs/best-practices</a></li>
+          <li>Envie resultados dos testes automaticamente para canais Slack</li>
+          <li>O time recebe notificações quando testes falham na pipeline</li>
+          <li>Use o plugin <strong>playwright-slack-report</strong> — configuração simples via config</li>
+          <li>Mostra: quantos testes passaram/falharam, duração, link para o relatório</li>
+          <li>Ideal para integrar com fluxo de CI/CD existente</li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="card-title">Evitando flaky tests</div>
+        <div class="card-title">Como funciona</div>
         <ul>
-          <li>Nunca usar <code>waitForTimeout()</code> — use assertions com auto-wait</li>
-          <li>Cada teste deve ser <strong>independente</strong> — não depender de outro teste</li>
-          <li>Use dados únicos por teste para evitar conflitos em paralelo</li>
-          <li>Limpe o estado entre testes (logout, reset de banco, etc.)</li>
-          <li>Monitore testes que falham intermitentemente e corrija a causa raiz</li>
-          <li>Se o banco de dados bloqueia tabelas durante operações (create/update/delete), isso pode causar falhas com muitos workers — ajuste o paralelismo</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="content-grid">
-      <div class="card">
-        <div class="card-title">Regras de lint e qualidade de código</div>
-        <ul>
-          <li>Configure <strong>ESLint</strong> com regras específicas para o projeto de testes — impede que código problemático entre no repositório</li>
-          <li><strong>max-lines:</strong> limite cada arquivo a ~200 linhas para manter a legibilidade</li>
-          <li><strong>max-params:</strong> limite o número de parâmetros por método</li>
-          <li><strong>complexity:</strong> complexidade ciclomática máxima de 10</li>
-          <li><strong>no-restricted-syntax:</strong> bloqueie <code>.only</code> em specs para evitar comitar por acidente</li>
-          <li><strong>no-duplicate-else-if, no-dupe-args:</strong> evite duplicidade</li>
-          <li>Adicione lint ao pipeline para rejeitar PRs que violem as regras</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="card-title">Data Factory e dados de teste</div>
-        <ul>
-          <li>Crie um <strong>Data Factory</strong> para gerar dados dinâmicos por teste — evita conflitos entre testes paralelos</li>
-          <li>Em vez de escrever vários testes similares, escreva um teste e itere nos dados com <code>test.describe</code> + loop ou <a href="https://playwright.dev/docs/test-parameterize" target="_blank" rel="noopener">parametrização</a></li>
-          <li>Centralize mensagens de texto e labels em um arquivo de constantes — facilita manutenção quando a UI muda</li>
-          <li>Use variáveis de ambiente para credenciais e URLs de diferentes ambientes</li>
-          <li>Considere usar <a href="https://fakerjs.dev/" target="_blank" rel="noopener">Faker.js</a> para gerar dados realistas (nomes, e-mails, endereços)</li>
+          <li>Instale: <code>npm install playwright-slack-report</code></li>
+          <li>Configure como <strong>reporter</strong> no <code>playwright.config.ts</code></li>
+          <li>Defina o Slack webhook ou token via variável de ambiente</li>
+          <li>O report é enviado automaticamente após a execução dos testes</li>
+          <li>Personalize a mensagem com informações do projeto</li>
+          <li>Referência: <a href="https://playwrightsolutions.com/how-do-you-send-slack-messages-to-a-channel-when-playwright-tests-finish/" target="_blank" rel="noopener">playwrightsolutions.com — Slack messages</a></li>
         </ul>
       </div>
     </div>
 
     <div class="code-block">
-      <pre><span class="cm">// Estrutura recomendada</span>
-meu-projeto/
-├── tests/
-│   ├── login.spec.ts
-│   ├── checkout.spec.ts
-│   └── dashboard.spec.ts
-├── pages/
-│   ├── login.page.ts
-│   ├── checkout.page.ts
-│   ├── dashboard.page.ts
-│   └── top-menu.page.ts
-├── fixtures/
-│   └── auth.fixture.ts
-├── utils/
-│   ├── test-data.ts
-│   └── data-factory.ts
-├── playwright.config.ts
-├── .eslintrc.json
-└── package.json
+      <pre><span class="cm">// Instalar o plugin</span>
+npm install playwright-slack-report
 
-<span class="cm">// Paralelismo — configuração no config</span>
+<span class="cm">// playwright.config.ts — configuração do reporter Slack</span>
+<span class="kw">import</span> { defineConfig } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+
 <span class="kw">export default</span> <span class="fn">defineConfig</span>({
-  workers: process.env.CI ? <span class="num">4</span> : undefined,
-  fullyParallel: <span class="kw">true</span>,
-  retries: process.env.CI ? <span class="num">2</span> : <span class="num">0</span>,
-  forbidOnly: !!process.env.CI,
+  reporter: [
+    [<span class="str">'html'</span>],
+    [<span class="str">'playwright-slack-report'</span>, {
+      channels: [<span class="str">'qa-results'</span>, <span class="str">'dev-team'</span>],
+      sendResults: <span class="str">'always'</span>, <span class="cm">// 'always' | 'on-failure' | 'off'</span>
+      meta: [
+        { key: <span class="str">'Project'</span>, value: <span class="str">'Meu Projeto E2E'</span> },
+        { key: <span class="str">'Environment'</span>, value: process.env.ENV || <span class="str">'staging'</span> },
+        { key: <span class="str">'Build'</span>, value: process.env.CI_BUILD_ID || <span class="str">'local'</span> },
+      ],
+    }],
+  ],
 });</pre>
     </div>
 
     <div class="code-block">
-      <pre><span class="cm">// .eslintrc.json — regras recomendadas para projetos de teste</span>
-{
-  <span class="str">"rules"</span>: {
-    <span class="str">"max-lines"</span>: [<span class="str">"error"</span>, { <span class="str">"max"</span>: <span class="num">200</span> }],
-    <span class="str">"max-params"</span>: [<span class="str">"warn"</span>, <span class="num">4</span>],
-    <span class="str">"complexity"</span>: [<span class="str">"warn"</span>, <span class="num">10</span>],
-    <span class="str">"no-duplicate-case"</span>: <span class="str">"error"</span>,
-    <span class="str">"no-dupe-args"</span>: <span class="str">"error"</span>
-  }
-}
+      <pre><span class="cm">// Variáveis de ambiente necessárias</span>
+SLACK_BOT_USER_OAUTH_TOKEN=xoxb-your-token-here
 
-<span class="cm">// utils/data-factory.ts — Data Factory para gerar dados dinâmicos</span>
-<span class="kw">export function</span> <span class="fn">createTestUser</span>(overrides = {}) {
-  <span class="kw">const</span> id = Date.<span class="fn">now</span>();
-  <span class="kw">return</span> {
-    email: <span class="str">`test-</span>${id}<span class="str">@example.com`</span>,
-    name: <span class="str">`User </span>${id}<span class="str">`</span>,
-    password: <span class="str">'SenhaSegura123!'</span>,
-    ...overrides,
-  };
-}</pre>
+<span class="cm">// OU usar webhook (alternativa mais simples)</span>
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T.../B.../xxx
+
+<span class="cm">// No CI (GitHub Actions):</span>
+env:
+  SLACK_BOT_USER_OAUTH_TOKEN: ${{ secrets.SLACK_TOKEN }}</pre>
+    </div>
+
+    <div class="content-grid">
+      <div class="card">
+        <div class="card-title">Opções de configuração</div>
+        <ul>
+          <li><code>channels</code> — lista de canais para enviar os resultados</li>
+          <li><code>sendResults</code> — <code>'always'</code>, <code>'on-failure'</code> ou <code>'off'</code></li>
+          <li><code>meta</code> — informações extras na mensagem (projeto, ambiente, build)</li>
+          <li><code>maxNumberOfFailuresToShow</code> — limita quantas falhas são exibidas</li>
+          <li><code>showInThread</code> — envia detalhes em thread para não poluir o canal</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Boas práticas para notificações</div>
+        <ul>
+          <li>Use <code>'on-failure'</code> para evitar spam no canal quando tudo passa</li>
+          <li>Configure canais separados para ambientes diferentes</li>
+          <li>Inclua link para o relatório HTML completo na mensagem</li>
+          <li>Use threads para detalhes — mantenha o canal principal limpo</li>
+          <li>Referência: <a href="https://playwrightsolutions.com/how-do-i-send-the-details-of-test-results-to-slack/" target="_blank" rel="noopener">playwrightsolutions.com — Test results details</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="remember-box">
+      <div class="remember-box-title">💡 Para lembrar</div>
+      <p>A integração com Slack funciona como um <strong>reporter</strong> no Playwright — configurada no <code>playwright.config.ts</code>. Você pode ter múltiplos reporters ativos ao mesmo tempo (HTML + Slack + JUnit). O token do Slack deve ser armazenado como secret no CI, nunca no código.</p>
     </div>
 
     <div class="info-box">
-      <div class="info-box-title">🔄 Atualização do Playwright</div>
-      <p>Atualize o Playwright regularmente com <code>npm install @playwright/test@latest</code> e depois <code>npx playwright install</code>. Dica: espere pela versão <strong>.1 ou .2</strong> de cada release (ex.: 1.59.1 em vez de 1.59.0) para evitar bugs de versão inicial. Acompanhe as releases em <a href="https://playwright.dev/docs/release-notes" target="_blank" rel="noopener">playwright.dev/docs/release-notes</a> ou ative notificações no <a href="https://github.com/microsoft/playwright/releases" target="_blank" rel="noopener">GitHub (Watch > Custom > Releases)</a>.</p>
+      <div class="info-box-title">🔗 Links úteis para Slack</div>
+      <p>Artigos de referência para implementar a integração:<br>
+      • <a href="https://playwrightsolutions.com/how-do-you-send-slack-messages-to-a-channel-when-playwright-tests-finish/" target="_blank" rel="noopener">Como enviar mensagens Slack quando testes terminam</a><br>
+      • <a href="https://playwrightsolutions.com/how-do-i-send-the-details-of-test-results-to-slack/" target="_blank" rel="noopener">Como enviar detalhes dos resultados para Slack</a></p>
     </div>
 
-    <div class="warn-box">
-      <div class="warn-box-title">⚠️ Regra de ouro</div>
-      <p>Se um teste falha intermitentemente (flaky), <strong>não ignore</strong>. Investigue a causa: pode ser uma espera incorreta, dado compartilhado entre testes, ou um bug real na aplicação. Flaky tests destroem a confiança da suíte inteira.</p>
+    <div class="practice-box">
+      <div class="practice-box-title">🏠 Para praticar em casa</div>
+      <ul>
+        <li>Instale o <code>playwright-slack-report</code> e configure no seu projeto</li>
+        <li>Crie um webhook de teste no Slack e envie um resultado</li>
+        <li>Configure o reporter para enviar apenas em caso de falha</li>
+      </ul>
     </div>
     <div style="text-align:right; margin-top:24px;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.5;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
@@ -1148,39 +1263,31 @@ meu-projeto/
 <section class="cheat-section">
   <div class="container">
     <p class="section-label">Referência Rápida</p>
-    <h2 class="section-title">Cheat Sheet · Playwright Parte 2</h2>
+    <h2 class="section-title">Cheat Sheet · Playwright Intermediário</h2>
 
     <div class="cheat-grid">
 
       <div class="cheat-card">
-        <div class="cheat-card-title">Config — Artefatos</div>
+        <div class="cheat-card-title">Locators Recomendados</div>
         <div class="cheat-row">
-          <span class="cheat-key">trace: 'on-first-retry'</span>
-          <span class="cheat-desc">Trace em retry</span>
+          <span class="cheat-key">getByRole('button', {name})</span>
+          <span class="cheat-desc">Acessibilidade</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key">trace: 'on'</span>
-          <span class="cheat-desc">Trace sempre</span>
+          <span class="cheat-key">getByTestId('id')</span>
+          <span class="cheat-desc">Test ID</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key">video: 'on-first-retry'</span>
-          <span class="cheat-desc">Vídeo em retry</span>
+          <span class="cheat-key">getByLabel('texto')</span>
+          <span class="cheat-desc">Label de input</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key">screenshot: 'only-on-failure'</span>
-          <span class="cheat-desc">Screenshot ao falhar</span>
+          <span class="cheat-key">getByText('texto')</span>
+          <span class="cheat-desc">Texto visível</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key">forbidOnly: !!process.env.CI</span>
-          <span class="cheat-desc">Bloqueia .only em CI</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">storageState: 'auth.json'</span>
-          <span class="cheat-desc">Sessão salva</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">fullyParallel: true</span>
-          <span class="cheat-desc">Paralelismo total</span>
+          <span class="cheat-key">getByPlaceholder('texto')</span>
+          <span class="cheat-desc">Placeholder</span>
         </div>
       </div>
 
@@ -1199,16 +1306,12 @@ meu-projeto/
           <span class="cheat-desc">Ação reutilizável</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key">this.page.getByRole()</span>
-          <span class="cheat-desc">Locator no POM</span>
+          <span class="cheat-key">async assertSuccess()</span>
+          <span class="cheat-desc">Validação no POM</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key">assertLoginSuccess()</span>
-          <span class="cheat-desc">Assert no POM</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">test.extend&lt;{}&gt;({})</span>
-          <span class="cheat-desc">Custom fixture</span>
+          <span class="cheat-key">SufixoPage</span>
+          <span class="cheat-desc">Nomenclatura</span>
         </div>
       </div>
 
@@ -1227,8 +1330,12 @@ meu-projeto/
           <span class="cheat-desc">Injeta no teste</span>
         </div>
         <div class="cheat-row">
+          <span class="cheat-key">{ scope: 'worker' }</span>
+          <span class="cheat-desc">Compartilhar no worker</span>
+        </div>
+        <div class="cheat-row">
           <span class="cheat-key">import { test } from fixture</span>
-          <span class="cheat-desc">Substituir import</span>
+          <span class="cheat-desc">Usar fixture</span>
         </div>
       </div>
 
@@ -1251,8 +1358,28 @@ meu-projeto/
           <span class="cheat-desc">Login via API</span>
         </div>
         <div class="cheat-row">
+          <span class="cheat-key">playwright/.auth/*.json</span>
+          <span class="cheat-desc">Arquivos de sessão</span>
+        </div>
+      </div>
+
+      <div class="cheat-card">
+        <div class="cheat-card-title">Múltiplos Contextos</div>
+        <div class="cheat-row">
           <span class="cheat-key">browser.newContext()</span>
-          <span class="cheat-desc">Contexto isolado</span>
+          <span class="cheat-desc">Novo contexto</span>
+        </div>
+        <div class="cheat-row">
+          <span class="cheat-key">context.newPage()</span>
+          <span class="cheat-desc">Nova aba</span>
+        </div>
+        <div class="cheat-row">
+          <span class="cheat-key">page.waitForEvent('popup')</span>
+          <span class="cheat-desc">Capturar popup</span>
+        </div>
+        <div class="cheat-row">
+          <span class="cheat-key">describe.serial()</span>
+          <span class="cheat-desc">Steps em sequência</span>
         </div>
       </div>
 
@@ -1278,66 +1405,34 @@ meu-projeto/
           <span class="cheat-key">waitForResponse(url)</span>
           <span class="cheat-desc">Esperar resposta</span>
         </div>
+      </div>
+
+      <div class="cheat-card">
+        <div class="cheat-card-title">Dados de Teste</div>
         <div class="cheat-row">
-          <span class="cheat-key">waitForLoadState('networkidle')</span>
-          <span class="cheat-desc">Esperar rede</span>
+          <span class="cheat-key">.env</span>
+          <span class="cheat-desc">Credenciais/URLs</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key">waitForURL(url)</span>
-          <span class="cheat-desc">Esperar navegação</span>
+          <span class="cheat-key">data/*.json</span>
+          <span class="cheat-desc">Dicionário de dados</span>
+        </div>
+        <div class="cheat-row">
+          <span class="cheat-key">request.post()</span>
+          <span class="cheat-desc">Criar via API</span>
+        </div>
+        <div class="cheat-row">
+          <span class="cheat-key">request.delete()</span>
+          <span class="cheat-desc">Limpar via API</span>
+        </div>
+        <div class="cheat-row">
+          <span class="cheat-key">page.route()</span>
+          <span class="cheat-desc">Mock de dados</span>
         </div>
       </div>
 
       <div class="cheat-card">
-        <div class="cheat-card-title">Controle de execução</div>
-        <div class="cheat-row">
-          <span class="cheat-key">test.only()</span>
-          <span class="cheat-desc">Rodar só este</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">test.skip()</span>
-          <span class="cheat-desc">Pular teste</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">test.describe.serial()</span>
-          <span class="cheat-desc">Rodar em sequência</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">test.describe.parallel()</span>
-          <span class="cheat-desc">Forçar paralelo</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">test.slow()</span>
-          <span class="cheat-desc">Triplicar timeout</span>
-        </div>
-      </div>
-
-      <div class="cheat-card">
-        <div class="cheat-card-title">Emulação Mobile</div>
-        <div class="cheat-row">
-          <span class="cheat-key">devices['iPhone 14']</span>
-          <span class="cheat-desc">Preset iPhone</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">devices['Pixel 7']</span>
-          <span class="cheat-desc">Preset Android</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">colorScheme: 'dark'</span>
-          <span class="cheat-desc">Modo escuro</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">locale: 'pt-BR'</span>
-          <span class="cheat-desc">Idioma</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key">geolocation: {lat, lng}</span>
-          <span class="cheat-desc">GPS simulado</span>
-        </div>
-      </div>
-
-      <div class="cheat-card">
-        <div class="cheat-card-title">Links úteis</div>
+        <div class="cheat-card-title">Links Úteis</div>
         <div class="cheat-row">
           <span class="cheat-key"><a href="https://playwright.dev/docs/pom" target="_blank" rel="noopener">playwright.dev/docs/pom</a></span>
           <span class="cheat-desc">Page Object Model</span>
@@ -1355,28 +1450,24 @@ meu-projeto/
           <span class="cheat-desc">Mocks de rede</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key"><a href="https://playwright.dev/docs/network" target="_blank" rel="noopener">playwright.dev/docs/network</a></span>
-          <span class="cheat-desc">Network / Interceptação</span>
+          <span class="cheat-key"><a href="https://playwright.dev/docs/api-testing" target="_blank" rel="noopener">playwright.dev/docs/api-testing</a></span>
+          <span class="cheat-desc">Testes de API</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key"><a href="https://playwright.dev/docs/emulation" target="_blank" rel="noopener">playwright.dev/docs/emulation</a></span>
-          <span class="cheat-desc">Emulação e devices</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key"><a href="https://playwright.dev/docs/ci" target="_blank" rel="noopener">playwright.dev/docs/ci</a></span>
-          <span class="cheat-desc">CI/CD</span>
-        </div>
-        <div class="cheat-row">
-          <span class="cheat-key"><a href="https://playwright.dev/docs/actionability" target="_blank" rel="noopener">playwright.dev/docs/actionability</a></span>
-          <span class="cheat-desc">Auto-waiting</span>
+          <span class="cheat-key"><a href="https://playwright.dev/docs/pages" target="_blank" rel="noopener">playwright.dev/docs/pages</a></span>
+          <span class="cheat-desc">Multi-page/popups</span>
         </div>
         <div class="cheat-row">
           <span class="cheat-key"><a href="https://playwright.dev/docs/best-practices" target="_blank" rel="noopener">playwright.dev/docs/best-practices</a></span>
           <span class="cheat-desc">Boas práticas</span>
         </div>
         <div class="cheat-row">
-          <span class="cheat-key"><a href="https://playwright.dev/docs/test-reporters" target="_blank" rel="noopener">playwright.dev/docs/test-reporters</a></span>
-          <span class="cheat-desc">Reporters</span>
+          <span class="cheat-key"><a href="https://playwright.dev/docs/locators" target="_blank" rel="noopener">playwright.dev/docs/locators</a></span>
+          <span class="cheat-desc">Locators</span>
+        </div>
+        <div class="cheat-row">
+          <span class="cheat-key"><a href="https://playwrightsolutions.com/" target="_blank" rel="noopener">playwrightsolutions.com</a></span>
+          <span class="cheat-desc">Slack integration</span>
         </div>
         <div class="cheat-row">
           <span class="cheat-key"><a href="https://playwright.dev/docs/release-notes" target="_blank" rel="noopener">playwright.dev/docs/release-notes</a></span>
@@ -1413,7 +1504,8 @@ meu-projeto/
 <footer class="footer">
   <div class="container">
     <p class="green" style="font-size:20px; margin-bottom:8px;"><img src="img/playwright-logo.svg" alt="Playwright" style="width:24px; height:24px; vertical-align:middle;"></p>
-    <p>Playwright Básico · Parte 2 &nbsp;|&nbsp; <span class="green">Material do Aluno</span></p>
+    <p>Playwright Intermediário &nbsp;|&nbsp; <span class="green">Material do Aluno</span></p>
+    <p style="margin-top:8px;">3 horas de workshop &nbsp;·&nbsp; 8 seções</p>
     <p style="margin-top:8px;"><a href="https://playwright.dev/" target="_blank" rel="noopener" style="color:var(--teal); text-decoration:none;">playwright.dev</a> &nbsp;·&nbsp; Bons estudos!</p>
   </div>
 </footer>

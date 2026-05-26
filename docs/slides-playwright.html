@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Playwright Básico · Parte 2 — Slides · testingwithrenata.com</title>
+<title>Playwright Intermediário — Slides · testingwithrenata.com</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/slides.css">
@@ -24,21 +24,21 @@
 
     <div style="flex:1; display:flex; flex-direction:column; justify-content:center; position:relative; z-index:1;">
       <a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-block; margin-bottom:24px;"><img src="img/logo_branca_menor.webp" alt="Testing with Renata" style="height:64px;" class="logo-light"><img src="img/Logo_escura.png" alt="Testing with Renata" style="height:64px;" class="logo-dark"></a>
-      <div class="tag tag-green">Playwright Básico</div>
-      <h1>Parte 2 · <span class="hl">Playwright</span><br>Básico</h1>
-      <p class="subtitle">Configuração avançada · Page Object Model · Fixtures · Autenticação · CI</p>
+      <div class="tag tag-green">Playwright Intermediário</div>
+      <h1><span class="hl">Playwright</span><br>Intermediário</h1>
+      <p class="subtitle">Page Objects · Fixtures · Autenticação · Network · Dados · Integrações</p>
       <div style="display:flex; gap:40px; margin-top:48px;">
         <div>
           <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Duração</div>
-          <div style="font-size:18px; font-weight:600;">2 horas</div>
+          <div style="font-size:18px; font-weight:600;">3 horas</div>
         </div>
         <div>
           <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Tópicos</div>
-          <div style="font-size:18px; font-weight:600;">9 seções</div>
+          <div style="font-size:18px; font-weight:600;">8 seções</div>
         </div>
         <div>
           <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Nível</div>
-          <div style="font-size:18px; font-weight:600;">Básico</div>
+          <div style="font-size:18px; font-weight:600;">Intermediário</div>
         </div>
       </div>
     </div>
@@ -54,224 +54,166 @@
     <div class="bg-grid"></div>
     <div class="slide-num">02 / 16</div>
 
-    <div class="tag tag-blue">Agenda da Aula</div>
+    <div class="tag tag-blue">Agenda do Workshop</div>
     <h2>O que vamos aprender hoje</h2>
     <div class="hdivider"></div>
 
     <div class="timeline-list">
       <div class="tl-row highlight">
         <div class="tl-time">00:00</div>
-        <div><div class="tl-name">Abertura</div><div class="tl-sub">Boas-vindas e revisão da Parte 1</div></div>
+        <div><div class="tl-name">Abertura</div><div class="tl-sub">Boas-vindas e alinhamento</div></div>
         <span class="tl-badge badge-g">5 min</span>
       </div>
       <div class="tl-row">
         <div class="tl-time">00:05</div>
-        <div><div class="tl-name">01 · playwright.config</div><div class="tl-sub">Trace, vídeo, screenshots, retries, workers, reporters</div></div>
-        <span class="tl-badge badge-g">15 min</span>
+        <div><div class="tl-name">01 · Alinhamento e Boas Práticas</div><div class="tl-sub">Revisão de estrutura, locators recomendados, anti-patterns</div></div>
+        <span class="tl-badge badge-g">20 min</span>
       </div>
       <div class="tl-row">
-        <div class="tl-time">00:20</div>
-        <div><div class="tl-name">02 · Organização e Arquitetura</div><div class="tl-sub">Page Object Model, Fixtures</div></div>
-        <span class="tl-badge badge-o">20 min</span>
+        <div class="tl-time">00:25</div>
+        <div><div class="tl-name">02 · Page Objects na Prática</div><div class="tl-sub">Estrutura, ações vs validações, quando não usar</div></div>
+        <span class="tl-badge badge-o">25 min</span>
       </div>
       <div class="tl-row">
-        <div class="tl-time">00:40</div>
-        <div><div class="tl-name">03 · Autenticação</div><div class="tl-sub">storageState, login via UI e API, múltiplos perfis</div></div>
-        <span class="tl-badge badge-g">15 min</span>
+        <div class="tl-time">00:50</div>
+        <div><div class="tl-name">03 · Fixtures e Reutilização de Setup</div><div class="tl-sub">Test vs worker scope, compartilhando dados, custom fixtures</div></div>
+        <span class="tl-badge badge-o">25 min</span>
       </div>
-      <div class="tl-row">
-        <div class="tl-time">00:55</div>
-        <div><div class="tl-name">04 · Testes Mais Estáveis</div><div class="tl-sub">Auto-waiting, esperas corretas, mocks, interceptação</div></div>
-        <span class="tl-badge badge-g">15 min</span>
-      </div>
-      <div class="tl-row">
-        <div class="tl-time">01:10</div>
-        <div><div class="tl-name">05 · Múltiplos Contextos</div><div class="tl-sub">Multi-user, multi-tab, popups</div></div>
-        <span class="tl-badge badge-g">10 min</span>
-      </div>
-      <div class="tl-row">
-        <div class="tl-time">01:20</div>
-        <div><div class="tl-name">06 · Mobile e Emulação</div><div class="tl-sub">Device presets, locale, geolocation</div></div>
-        <span class="tl-badge badge-g">10 min</span>
+      <div class="tl-row highlight-blue">
+        <div class="tl-time">01:15</div>
+        <div><div class="tl-name">☕ Intervalo</div><div class="tl-sub">Pausa para descanso</div></div>
+        <span class="tl-badge badge-b">15 min</span>
       </div>
       <div class="tl-row">
         <div class="tl-time">01:30</div>
-        <div><div class="tl-name">07 · CI com GitHub Actions</div><div class="tl-sub">Pipeline, relatórios, merge de reports</div></div>
-        <span class="tl-badge badge-g">10 min</span>
+        <div><div class="tl-name">04 · Autenticação e Estado</div><div class="tl-sub">storageState, login, cookies, ambientes diferentes</div></div>
+        <span class="tl-badge badge-g">20 min</span>
       </div>
       <div class="tl-row">
-        <div class="tl-time">01:40</div>
-        <div><div class="tl-name">08 · Boas Práticas Reais</div><div class="tl-sub">Estrutura, paralelismo, lint, data factory, flaky tests</div></div>
+        <div class="tl-time">01:50</div>
+        <div><div class="tl-name">05 · Fluxos Complexos e Múltiplos Contextos</div><div class="tl-sub">Multi-page, popups, multi-step, multi-user, Context vs Page</div></div>
+        <span class="tl-badge badge-g">20 min</span>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">02:10</div>
+        <div><div class="tl-name">06 · Network Interception e API</div><div class="tl-sub">Interceptar requests, mockar respostas, testes de API</div></div>
+        <span class="tl-badge badge-g">20 min</span>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">02:30</div>
+        <div><div class="tl-name">07 · Lidando com Dados</div><div class="tl-sub">Estratégias, .env, dicionário JSON, APIs, mock</div></div>
+        <span class="tl-badge badge-g">15 min</span>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">02:45</div>
+        <div><div class="tl-name">08 · Integrações com Slack</div><div class="tl-sub">Enviar resultados de testes para canais Slack</div></div>
         <span class="tl-badge badge-g">10 min</span>
       </div>
       <div class="tl-row highlight-blue">
-        <div class="tl-time">01:50</div>
+        <div class="tl-time">02:55</div>
         <div><div class="tl-name">Q&A — Perguntas</div><div class="tl-sub">Dúvidas e encerramento</div></div>
-        <span class="tl-badge badge-b">10 min</span>
+        <span class="tl-badge badge-b">5 min</span>
       </div>
     </div>
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
 
-  <!-- ══ SLIDE 03 · PLAYWRIGHT.CONFIG ══ -->
+  <!-- ══ SLIDE 03 · ALINHAMENTO E BOAS PRÁTICAS ══ -->
   <div class="slide" id="s3">
     <div class="bg-grid"></div>
     <div class="bg-glow-green"></div>
     <div class="slide-num">03 / 16</div>
 
-    <div class="tag tag-green">Seção 01 · 15 min</div>
-    <h2>⚙️ <span class="hl">playwright.config</span></h2>
+    <div class="tag tag-green">Seção 01 · 20 min</div>
+    <h2>🎯 Alinhamento e <span class="hl">Boas Práticas</span> Essenciais</h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1;">
       <div style="display:flex; flex-direction:column; gap:20px;">
         <div class="card green-border">
-          <div class="card-label">O arquivo playwright.config.ts</div>
+          <div class="card-label">Revisão rápida da estrutura</div>
           <ul class="bullets">
-            <li>Centraliza <strong>todas as configurações</strong> globais</li>
-            <li>Browsers, timeouts, baseURL, retries, paralelismo</li>
-            <li>Geração automática de <strong>traces, vídeos e screenshots</strong></li>
-            <li>Diferentes <strong>projects</strong> (browsers, devices)</li>
-            <li>Sobrescrito via CLI ou por teste individual</li>
+            <li>Organização de pastas: <code>tests/</code>, <code>pages/</code>, <code>fixtures/</code></li>
+            <li>Separação clara de responsabilidades</li>
+            <li>Convenções de nomenclatura</li>
+            <li><code>playwright.config.ts</code> como ponto central</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">Artefatos de debug</div>
+          <div class="card-label">Locators recomendados</div>
           <ul class="bullets">
-            <li><code>trace: 'on-first-retry'</code> — trace em retry</li>
-            <li><code>video: 'on-first-retry'</code> — vídeo em retry</li>
-            <li><code>screenshot: 'only-on-failure'</code> — ao falhar</li>
-            <li>Artefatos em <code>test-results/</code></li>
-            <li><strong>Trace Viewer</strong> &gt; screenshots &gt; vídeos</li>
+            <li><code>getByRole()</code> — acessível e resiliente</li>
+            <li><code>getByTestId()</code> — quando role não basta</li>
+            <li><code>getByLabel()</code>, <code>getByPlaceholder()</code></li>
+            <li><code>getByText()</code> — conteúdo visível</li>
+            <li>Evite <code>css</code> e <code>xpath</code> frágeis</li>
           </ul>
+        </div>
+        <div class="warn">
+          <strong>⚠️ Anti-patterns comuns:</strong> <code>waitForTimeout()</code>, seletores frágeis (<code>.btn-primary > span:nth-child(2)</code>), lógica de negócio dentro do teste.
         </div>
       </div>
 
       <div class="codeblock" style="flex:1;">
-        <pre><span class="cm">// playwright.config.ts</span>
-<span class="kw">import</span> { defineConfig } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+        <pre><span class="cm">// ✅ Bons locators</span>
+page.<span class="fn">getByRole</span>(<span class="str">'button'</span>,
+  { name: <span class="str">'Salvar'</span> });
+page.<span class="fn">getByTestId</span>(<span class="str">'cart-total'</span>);
+page.<span class="fn">getByLabel</span>(<span class="str">'E-mail'</span>);
 
-<span class="kw">export default</span> <span class="fn">defineConfig</span>({
-  testDir: <span class="str">'./tests'</span>,
-  fullyParallel: <span class="kw">true</span>,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? <span class="num">2</span> : <span class="num">0</span>,
-  workers: process.env.CI ? <span class="num">4</span> : undefined,
-  reporter: <span class="str">'html'</span>,
+<span class="cm">// ❌ Anti-patterns</span>
+page.<span class="fn">locator</span>(
+  <span class="str">'.container > div:nth-child(3) a'</span>);
+<span class="kw">await</span> page.<span class="fn">waitForTimeout</span>(<span class="num">3000</span>);
 
-  use: {
-    baseURL: <span class="str">'https://exemplo.com'</span>,
-    trace: <span class="str">'on-first-retry'</span>,
-    video: <span class="str">'on-first-retry'</span>,
-    screenshot: <span class="str">'only-on-failure'</span>,
-  },
+<span class="cm">// ❌ Lógica dentro do teste</span>
+<span class="kw">if</span> (await page.<span class="fn">isVisible</span>(<span class="str">'.modal'</span>)) {
+  <span class="kw">await</span> page.<span class="fn">click</span>(<span class="str">'.close'</span>);
+}
 
-  projects: [
-    { name: <span class="str">'chromium'</span>,
-      use: { browserName: <span class="str">'chromium'</span> } },
-    { name: <span class="str">'firefox'</span>,
-      use: { browserName: <span class="str">'firefox'</span> } },
-  ],
-});</pre>
+<span class="cm">// ✅ Estrutura recomendada</span>
+meu-projeto/
+├── tests/        <span class="cm">// specs</span>
+├── pages/        <span class="cm">// page objects</span>
+├── fixtures/     <span class="cm">// custom fixtures</span>
+├── utils/        <span class="cm">// helpers</span>
+└── playwright.config.ts</pre>
       </div>
     </div>
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
 
-  <!-- ══ SLIDE 04 · CONFIG (cont.) ══ -->
+  <!-- ══ SLIDE 04 · PAGE OBJECTS NA PRÁTICA ══ -->
   <div class="slide" id="s4">
     <div class="bg-grid"></div>
     <div class="slide-num">04 / 16</div>
 
-    <div class="tag tag-green">Seção 01 · Config</div>
-    <h2>Retries, Workers e <span class="hl">forbidOnly</span></h2>
+    <div class="tag tag-green">Seção 02 · 25 min</div>
+    <h2>🏗️ <span class="hl">Page Objects</span> na Prática</h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1; align-items:start;">
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div class="card green-border">
-          <div class="card-label">Retries e Workers</div>
+          <div class="card-label">O problema</div>
           <ul class="bullets">
-            <li><code>retries</code> — re-executar testes falhos. Recomendado: <strong>1</strong></li>
-            <li>Se precisa de 3+ retries, investigue a causa raiz</li>
-            <li><code>workers</code> — threads paralelas (depende da infra)</li>
-            <li><code>fullyParallel: true</code> — paralelismo por teste</li>
-            <li><code>test.describe.serial</code> — forçar sequência</li>
+            <li>Testes <strong>duplicados e difíceis de manter</strong></li>
+            <li>Mudança na UI = alterar dezenas de arquivos</li>
+            <li>Locators espalhados por toda a suíte</li>
+            <li>Testes longos e difíceis de ler</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">forbidOnly e Reporters</div>
+          <div class="card-label">Estrutura simples de Page Object</div>
           <ul class="bullets">
-            <li><code>forbidOnly</code> — impede <code>.only</code> na pipeline</li>
-            <li>Reporters: <code>html</code>, <code>dot</code>, <code>list</code>, <code>json</code>, <code>junit</code></li>
-            <li><code>junit</code> — resultados direto no PR do GitHub</li>
-            <li>Timeout por ação vs timeout global</li>
-          </ul>
-        </div>
-        <div class="warn">
-          <strong>⚠️ Cuidado com .only:</strong> É muito comum esquecer um <code>test.only()</code> e comitar. Use <code>forbidOnly: !!process.env.CI</code> para evitar.
-        </div>
-      </div>
-
-      <div class="codeblock" style="flex:1;">
-        <pre><span class="cm">// Timeout específico por ação</span>
-<span class="kw">await</span> <span class="fn">expect</span>(page
-  .<span class="fn">getByText</span>(<span class="str">'Dados carregados'</span>))
-  .<span class="fn">toBeVisible</span>({ timeout: <span class="num">15000</span> });
-
-<span class="cm">// test.describe.serial</span>
-test.<span class="fn">describe</span>.<span class="fn">serial</span>(
-  <span class="str">'fluxo de checkout'</span>, () => {
-  test(<span class="str">'adicionar produto'</span>,
-    <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });
-  test(<span class="str">'preencher endereço'</span>,
-    <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });
-  test(<span class="str">'finalizar compra'</span>,
-    <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });
-});
-
-<span class="cm">// test.skip e test.only</span>
-test.<span class="fn">skip</span>(<span class="str">'feature em dev'</span>,
-  <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });
-test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>,
-  <span class="kw">async</span> ({ page }) => { <span class="cm">/* ... */</span> });</pre>
-      </div>
-    </div>
-    <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
-  </div>
-
-  <!-- ══ SLIDE 05 · PAGE OBJECT MODEL ══ -->
-  <div class="slide" id="s5">
-    <div class="bg-grid"></div>
-    <div class="bg-glow-green"></div>
-    <div class="slide-num">05 / 16</div>
-
-    <div class="tag tag-green">Seção 02 · 20 min</div>
-    <h2>🏗️ <span class="hl">Page Object Model</span></h2>
-    <div class="hdivider"></div>
-
-    <div class="cols cols-2" style="flex:1; align-items:start;">
-      <div style="display:flex; flex-direction:column; gap:16px;">
-        <div class="card green-border">
-          <div class="card-label">O que é POM</div>
-          <ul class="bullets">
-            <li><strong>Encapsula locators e ações</strong> de cada página</li>
-            <li>Separa lógica de interação da lógica de teste</li>
-            <li>Se a UI muda, atualiza só o Page Object</li>
-            <li>Testes ficam mais legíveis e curtos</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-label">Boas práticas</div>
-          <ul class="bullets">
-            <li>Sufixo <strong>Page</strong>: <code>LoginPage</code>, <code>CheckoutPage</code></li>
-            <li>Nomeie locators com tipo: <code>submitButton</code>, <code>emailInput</code></li>
-            <li>Métodos de assert prefixados: <code>assertLoginSuccess()</code></li>
-            <li>Máximo ~200 linhas por arquivo</li>
+            <li>Uma classe por página/componente</li>
+            <li>Locators como propriedades privadas</li>
+            <li>Métodos públicos = ações do usuário</li>
+            <li>Constructor recebe <code>Page</code></li>
           </ul>
         </div>
         <div class="tip">
-          <strong>💡 Dica:</strong> Page Objects servem para componentes também — ex.: <code>TopMenuPage</code> com <code>logout()</code>.
+          <strong>💡 Quando NÃO usar:</strong> Testes simples de uma página só, protótipos rápidos, ou suítes muito pequenas (< 5 testes).
         </div>
       </div>
 
@@ -299,10 +241,74 @@ test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>,
       .<span class="fn">fill</span>(senha);
     <span class="kw">await</span> <span class="kw">this</span>.submitButton.<span class="fn">click</span>();
   }
+}</pre>
+      </div>
+    </div>
+    <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
+  </div>
 
-  <span class="kw">async</span> <span class="fn">assertLoginSuccess</span>() {
-    <span class="kw">await</span> <span class="fn">expect</span>(<span class="kw">this</span>.page)
-      .<span class="fn">toHaveURL</span>(<span class="str">/dashboard/</span>);
+  <!-- ══ SLIDE 05 · PAGE OBJECTS (cont.) ══ -->
+  <div class="slide" id="s5">
+    <div class="bg-grid"></div>
+    <div class="bg-glow-green"></div>
+    <div class="slide-num">05 / 16</div>
+
+    <div class="tag tag-green">Seção 02 · Page Objects</div>
+    <h2>Separar <span class="hl">Ações</span> vs <span class="hl">Validações</span></h2>
+    <div class="hdivider"></div>
+
+    <div class="cols cols-2" style="flex:1; align-items:start;">
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div class="card green-border">
+          <div class="card-label">Ações vs Validações</div>
+          <ul class="bullets">
+            <li><strong>Ações:</strong> métodos que interagem com a UI</li>
+            <li><strong>Validações:</strong> métodos com <code>expect</code> / assertions</li>
+            <li>Prefixe validações: <code>assertSuccess()</code>, <code>verifyMessage()</code></li>
+            <li>Ações retornam <code>void</code> ou a próxima page</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-label">Boas práticas de POM</div>
+          <ul class="bullets">
+            <li>Máximo ~200 linhas por arquivo</li>
+            <li>Sufixo <strong>Page</strong>: <code>LoginPage</code>, <code>CheckoutPage</code></li>
+            <li>Nomeie locators com tipo: <code>submitBtn</code>, <code>emailInput</code></li>
+            <li>POMs para componentes: <code>HeaderComponent</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="codeblock" style="flex:1;">
+        <pre><span class="cm">// pages/checkout.page.ts</span>
+<span class="kw">export class</span> <span class="fn">CheckoutPage</span> {
+  <span class="kw">constructor</span>(<span class="kw">private</span> page: Page) {}
+
+  <span class="cm">// ── Ações ──</span>
+  <span class="kw">async</span> <span class="fn">fillAddress</span>(address: string) {
+    <span class="kw">await</span> <span class="kw">this</span>.page
+      .<span class="fn">getByLabel</span>(<span class="str">'Endereço'</span>)
+      .<span class="fn">fill</span>(address);
+  }
+
+  <span class="kw">async</span> <span class="fn">submitOrder</span>() {
+    <span class="kw">await</span> <span class="kw">this</span>.page
+      .<span class="fn">getByRole</span>(<span class="str">'button'</span>,
+        { name: <span class="str">'Finalizar'</span> })
+      .<span class="fn">click</span>();
+  }
+
+  <span class="cm">// ── Validações ──</span>
+  <span class="kw">async</span> <span class="fn">assertOrderConfirmed</span>() {
+    <span class="kw">await</span> <span class="fn">expect</span>(<span class="kw">this</span>.page
+      .<span class="fn">getByText</span>(<span class="str">'Pedido confirmado'</span>))
+      .<span class="fn">toBeVisible</span>();
+  }
+
+  <span class="kw">async</span> <span class="fn">assertTotal</span>(value: string) {
+    <span class="kw">await</span> <span class="fn">expect</span>(<span class="kw">this</span>.page
+      .<span class="fn">getByTestId</span>(<span class="str">'order-total'</span>))
+      .<span class="fn">toHaveText</span>(value);
   }
 }</pre>
       </div>
@@ -315,8 +321,8 @@ test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>,
     <div class="bg-grid"></div>
     <div class="slide-num">06 / 16</div>
 
-    <div class="tag tag-purple">Seção 02 · Fixtures</div>
-    <h2>🧩 <span class="hl-blue">Fixtures</span></h2>
+    <div class="tag tag-purple">Seção 03 · 25 min</div>
+    <h2>🧩 <span class="hl-blue">Fixtures</span> e Reutilização de Setup</h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1; align-items:start;">
@@ -326,26 +332,23 @@ test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>,
           <ul class="bullets">
             <li>Setup compartilhado + injeção de dependências</li>
             <li>Substituem <code>beforeEach</code> repetitivos</li>
-            <li>Podem <strong>acelerar execução em até 70%</strong></li>
             <li>Antes de <code>use()</code> = setup, depois = teardown</li>
+            <li>Podem <strong>acelerar execução</strong> significativamente</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">Quando usar</div>
+          <div class="card-label">Test vs Worker scope</div>
           <ul class="bullets">
-            <li><strong>Use:</strong> suíte grande, muitos page objects</li>
-            <li><strong>Não use:</strong> projetos pequenos e simples</li>
-            <li>Elimina <code>new PageObject()</code> de todos os specs</li>
-            <li>Considere uma fixture por área funcional</li>
+            <li><strong>Test scope:</strong> nova instância por teste (padrão)</li>
+            <li><strong>Worker scope:</strong> compartilhada entre testes do worker</li>
+            <li>Worker = ideal para setup custoso (DB, auth)</li>
+            <li><code>{ scope: 'worker' }</code> na definição</li>
           </ul>
-        </div>
-        <div class="warn">
-          <strong>⚠️ Cuidado:</strong> Uma fixture "base" que instancia tudo carrega na memória objetos desnecessários.
         </div>
       </div>
 
       <div class="codeblock" style="flex:1;">
-        <pre><span class="cm">// fixtures/auth.fixture.ts</span>
+        <pre><span class="cm">// fixtures/pages.fixture.ts</span>
 <span class="kw">import</span> { test <span class="kw">as</span> base }
   <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
 <span class="kw">import</span> { LoginPage }
@@ -358,60 +361,131 @@ test.<span class="fn">only</span>(<span class="str">'debug temporário'</span>,
 <span class="kw">export const</span> test =
   base.<span class="fn">extend</span>&lt;MyFixtures&gt;({
   loginPage: <span class="kw">async</span> ({ page }, use) => {
+    <span class="cm">// Setup</span>
     <span class="kw">const</span> lp = <span class="kw">new</span> <span class="fn">LoginPage</span>(page);
     <span class="kw">await</span> lp.<span class="fn">goto</span>();
+    <span class="cm">// Injeta no teste</span>
     <span class="kw">await</span> <span class="fn">use</span>(lp);
+    <span class="cm">// Teardown (após o teste)</span>
   },
 });
 
-<span class="cm">// tests/login.spec.ts</span>
+<span class="cm">// No spec — uso limpo</span>
 <span class="kw">import</span> { test }
-  <span class="kw">from</span> <span class="str">'../fixtures/auth.fixture'</span>;
+  <span class="kw">from</span> <span class="str">'../fixtures/pages.fixture'</span>;
 
 test(<span class="str">'login com sucesso'</span>,
   <span class="kw">async</span> ({ loginPage }) => {
   <span class="kw">await</span> loginPage.<span class="fn">login</span>(
     <span class="str">'user@email.com'</span>, <span class="str">'senha123'</span>);
-  <span class="kw">await</span> loginPage
-    .<span class="fn">assertLoginSuccess</span>();
 });</pre>
       </div>
     </div>
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
 
-  <!-- ══ SLIDE 07 · AUTENTICAÇÃO ══ -->
+  <!-- ══ SLIDE 07 · CUSTOM FIXTURES ══ -->
   <div class="slide" id="s7">
     <div class="bg-grid"></div>
     <div class="bg-glow-green"></div>
     <div class="slide-num">07 / 16</div>
 
-    <div class="tag tag-green">Seção 03 · 15 min</div>
-    <h2>🔐 <span class="hl">Autenticação</span></h2>
+    <div class="tag tag-purple">Seção 03 · Fixtures</div>
+    <h2>Compartilhando Dados e <span class="hl">Custom Fixtures</span></h2>
+    <div class="hdivider"></div>
+
+    <div class="cols cols-2" style="flex:1; align-items:start;">
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div class="card blue-border">
+          <div class="card-label">Compartilhando dados entre testes</div>
+          <ul class="bullets">
+            <li>Fixtures podem <strong>gerar dados</strong> e injetá-los</li>
+            <li>Worker fixture = mesmo dado para todo o worker</li>
+            <li>Ideal para tokens, usuários criados via API</li>
+            <li>Cleanup automático no teardown</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-label">Custom fixtures avançadas</div>
+          <ul class="bullets">
+            <li>Compor múltiplas fixtures com <code>extend</code></li>
+            <li>Fixture que depende de outra fixture</li>
+            <li>Fixtures com opções configuráveis</li>
+            <li>Fixtures para API requests</li>
+          </ul>
+        </div>
+        <div class="warn">
+          <strong>⚠️ Cuidado:</strong> Uma fixture "base" que instancia tudo carrega na memória objetos desnecessários. Prefira fixtures focadas.
+        </div>
+      </div>
+
+      <div class="codeblock" style="flex:1;">
+        <pre><span class="cm">// Worker-scoped fixture</span>
+<span class="kw">export const</span> test =
+  base.<span class="fn">extend</span>&lt;{}, { apiToken: string }&gt;({
+  apiToken: [<span class="kw">async</span> ({}, use) => {
+    <span class="cm">// Roda 1x por worker</span>
+    <span class="kw">const</span> token = <span class="kw">await</span>
+      <span class="fn">getAuthToken</span>();
+    <span class="kw">await</span> <span class="fn">use</span>(token);
+  }, { scope: <span class="str">'worker'</span> }],
+});
+
+<span class="cm">// Fixture com dependência</span>
+<span class="kw">export const</span> test =
+  base.<span class="fn">extend</span>&lt;{
+  dashboardPage: DashboardPage;
+}&gt;({
+  dashboardPage: <span class="kw">async</span> (
+    { page, apiToken }, use
+  ) => {
+    <span class="kw">await</span> page.<span class="fn">goto</span>(<span class="str">'/dashboard'</span>);
+    <span class="kw">const</span> dp = <span class="kw">new</span>
+      <span class="fn">DashboardPage</span>(page);
+    <span class="kw">await</span> <span class="fn">use</span>(dp);
+  },
+});</pre>
+      </div>
+    </div>
+    <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
+  </div>
+
+  <!-- ══ SLIDE 08 · AUTENTICAÇÃO ══ -->
+  <div class="slide" id="s8">
+    <div class="bg-grid"></div>
+    <div class="slide-num">08 / 16</div>
+
+    <div class="tag tag-green">Seção 04 · 20 min</div>
+    <h2>🔐 <span class="hl">Autenticação</span> e Gerenciamento de Estado</h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1; align-items:start;">
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div class="card green-border">
-          <div class="card-label">storageState — login reutilizável</div>
+          <div class="card-label">storageState</div>
           <ul class="bullets">
             <li><strong>Login uma única vez</strong>, reutilizar sessão</li>
             <li>Salva cookies + localStorage em JSON</li>
             <li>Cada teste começa já autenticado</li>
-            <li>Configurado via <strong>project setup</strong></li>
+            <li>Configurado via <strong>project setup</strong> + <code>dependencies</code></li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">Duas formas de login no setup</div>
+          <div class="card-label">Cookies e sessão</div>
           <ul class="bullets">
-            <li><strong>Via UI:</strong> simula fluxo real (mais lento)</li>
-            <li><strong>Via API:</strong> chama endpoint direto (recomendado)</li>
-            <li>Use <code>projects</code> com <code>dependencies</code> (moderno)</li>
-            <li>Não use <code>globalSetup</code> (legado)</li>
+            <li>storageState salva <strong>cookies e localStorage</strong></li>
+            <li>Cookies expiram — setup re-executa se necessário</li>
+            <li>Não salva sessionStorage (usar workaround)</li>
+            <li>Adicione <code>playwright/.auth/</code> ao <code>.gitignore</code></li>
           </ul>
         </div>
-        <div class="warn">
-          <strong>⚠️ Cuidado:</strong> Adicione <code>playwright/.auth/</code> ao <code>.gitignore</code> — os JSONs contêm tokens.
+        <div class="card">
+          <div class="card-label">Ambientes diferentes</div>
+          <ul class="bullets">
+            <li>Variáveis de ambiente para URLs e credenciais</li>
+            <li><code>baseURL</code> por project ou <code>.env</code></li>
+            <li>Setup diferente por ambiente (local, staging, prod)</li>
+          </ul>
         </div>
       </div>
 
@@ -452,33 +526,38 @@ setup(<span class="str">'fazer login'</span>,
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
 
-  <!-- ══ SLIDE 08 · AUTH (cont.) ══ -->
-  <div class="slide" id="s8">
+  <!-- ══ SLIDE 09 · AUTH (cont.) ══ -->
+  <div class="slide" id="s9">
     <div class="bg-grid"></div>
-    <div class="slide-num">08 / 16</div>
+    <div class="bg-glow-blue"></div>
+    <div class="slide-num">09 / 16</div>
 
-    <div class="tag tag-green">Seção 03 · Auth</div>
-    <h2>Múltiplos Perfis e <span class="hl">Login via API</span></h2>
+    <div class="tag tag-green">Seção 04 · Auth</div>
+    <h2>Login uma vez para <span class="hl">toda a suíte</span></h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1; align-items:start;">
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div class="card green-border">
-          <div class="card-label">Múltiplos perfis (admin + user)</div>
+          <div class="card-label">Login uma vez, reutilizar sessão</div>
           <ul class="bullets">
-            <li>Setup separado para cada perfil</li>
-            <li>Projects: <code>'chromium-admin'</code> e <code>'chromium-user'</code></li>
-            <li>Útil para permissões, fluxos de aprovação</li>
+            <li>Project <code>setup</code> roda antes dos demais</li>
+            <li>Outros projects dependem do setup</li>
+            <li><strong>Via UI:</strong> simula fluxo real (mais lento)</li>
+            <li><strong>Via API:</strong> chama endpoint direto (recomendado)</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">Limitações do storageState</div>
+          <div class="card-label">Múltiplos perfis</div>
           <ul class="bullets">
-            <li>Apenas <strong>cookies e localStorage</strong></li>
-            <li>Não serve para carrinho, formulários, etc.</li>
-            <li>Para pular etapas, use <strong>chamadas de API</strong></li>
-            <li>Cookies expiram — setup re-executa se necessário</li>
+            <li>Setup separado para admin e user</li>
+            <li>Projects: <code>'admin-tests'</code>, <code>'user-tests'</code></li>
+            <li>Cada um com seu <code>storageState</code></li>
+            <li>Útil para permissões e aprovação</li>
           </ul>
+        </div>
+        <div class="warn">
+          <strong>⚠️ Cuidado:</strong> Adicione <code>playwright/.auth/</code> ao <code>.gitignore</code> — os JSONs contêm tokens sensíveis.
         </div>
       </div>
 
@@ -519,100 +598,41 @@ projects: [
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
 
-  <!-- ══ SLIDE 09 · TESTES MAIS ESTÁVEIS ══ -->
-  <div class="slide" id="s9">
-    <div class="bg-grid"></div>
-    <div class="bg-glow-blue"></div>
-    <div class="slide-num">09 / 16</div>
-
-    <div class="tag tag-blue">Seção 04 · 15 min</div>
-    <h2>🛡️ Testes Mais <span class="hl">Estáveis</span></h2>
-    <div class="hdivider"></div>
-
-    <div class="cols cols-2" style="flex:1; align-items:start;">
-      <div style="display:flex; flex-direction:column; gap:16px;">
-        <div class="card blue-border">
-          <div class="card-label">Esperas corretas</div>
-          <ul class="bullets">
-            <li><strong>Auto-waiting</strong> nativo na maioria das ações</li>
-            <li><strong>Nunca</strong> use <code>waitForTimeout()</code></li>
-            <li>Assertions <code>expect</code> com auto-retry</li>
-            <li><code>waitForLoadState('networkidle')</code></li>
-            <li><code>waitForResponse(url)</code></li>
-            <li><code>waitForURL(url)</code></li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-label">Interceptação de requests</div>
-          <ul class="bullets">
-            <li><code>page.route()</code> — interceptar requests</li>
-            <li><code>route.fulfill()</code> — retornar mock</li>
-            <li><code>route.abort()</code> — bloquear requests</li>
-            <li><code>route.continue()</code> — deixar passar</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="codeblock" style="flex:1;">
-        <pre><span class="cm">// Esperar network idle</span>
-<span class="kw">await</span> page.<span class="fn">goto</span>(<span class="str">'/dashboard'</span>);
-<span class="kw">await</span> page.<span class="fn">waitForLoadState</span>(
-  <span class="str">'networkidle'</span>);
-
-<span class="cm">// Esperar resposta da API</span>
-<span class="kw">const</span> resp = <span class="kw">await</span> page
-  .<span class="fn">waitForResponse</span>(<span class="str">'**/api/users'</span>);
-<span class="fn">expect</span>(resp.<span class="fn">status</span>()).<span class="fn">toBe</span>(<span class="num">200</span>);
-
-<span class="cm">// Mock de API</span>
-<span class="kw">await</span> page.<span class="fn">route</span>(
-  <span class="str">'**/api/products'</span>,
-  <span class="kw">async</span> (route) => {
-  <span class="kw">await</span> route.<span class="fn">fulfill</span>({
-    status: <span class="num">200</span>,
-    contentType: <span class="str">'application/json'</span>,
-    body: <span class="fn">JSON</span>.<span class="fn">stringify</span>(
-      [{ id: <span class="num">1</span>, name: <span class="str">'Mock'</span> }]),
-  });
-});
-
-<span class="cm">// Bloquear analytics</span>
-<span class="kw">await</span> page.<span class="fn">route</span>(
-  <span class="str">'**/analytics/**'</span>,
-  (route) => route.<span class="fn">abort</span>());</pre>
-      </div>
-    </div>
-    <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
-  </div>
-
-  <!-- ══ SLIDE 10 · MÚLTIPLOS CONTEXTOS ══ -->
+  <!-- ══ SLIDE 10 · FLUXOS COMPLEXOS ══ -->
   <div class="slide" id="s10">
     <div class="bg-grid"></div>
     <div class="slide-num">10 / 16</div>
 
-    <div class="tag tag-green">Seção 05 · 10 min</div>
-    <h2>👥 Múltiplos <span class="hl">Contextos</span></h2>
+    <div class="tag tag-green">Seção 05 · 20 min</div>
+    <h2>👥 Fluxos Complexos e <span class="hl">Múltiplos Contextos</span></h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1; align-items:start;">
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div class="card green-border">
-          <div class="card-label">Multi-user</div>
+          <div class="card-label">Multi-page e Popups</div>
           <ul class="bullets">
-            <li>Múltiplos <strong>browser contexts</strong> no mesmo teste</li>
-            <li>Cada contexto: cookies, sessão e storage próprios</li>
-            <li>Ideal para: chat, permissões, colaboração</li>
-            <li>Mesmo browser, sem custo extra</li>
+            <li><code>page.waitForEvent('popup')</code> — novas abas</li>
+            <li>Cada aba é uma <code>Page</code> independente</li>
+            <li>Útil para OAuth, links <code>target="_blank"</code></li>
+            <li>Sem window handle como Selenium</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">Multi-tab e Popups</div>
+          <div class="card-label">Multi-step flows</div>
           <ul class="bullets">
-            <li>Intercepta novas abas automaticamente</li>
-            <li><code>page.waitForEvent('popup')</code></li>
-            <li>Cada aba é uma <code>Page</code> independente</li>
-            <li>Útil para: OAuth, links <code>target="_blank"</code></li>
-            <li>Sem window handle como Selenium</li>
+            <li>Checkout, onboarding, wizards</li>
+            <li><code>test.describe.serial</code> para sequência</li>
+            <li>Cada step pode ser um teste separado</li>
+            <li>Compartilhar estado via fixtures</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-label">Context vs Page</div>
+          <ul class="bullets">
+            <li><strong>Context:</strong> isolamento completo (cookies, storage)</li>
+            <li><strong>Page:</strong> aba dentro de um context</li>
+            <li>Multi-user = múltiplos contexts</li>
           </ul>
         </div>
       </div>
@@ -651,251 +671,279 @@ projects: [
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
 
-  <!-- ══ SLIDE 11 · MOBILE E EMULAÇÃO ══ -->
+  <!-- ══ SLIDE 11 · NETWORK INTERCEPTION ══ -->
   <div class="slide" id="s11">
     <div class="bg-grid"></div>
     <div class="bg-glow-green"></div>
     <div class="slide-num">11 / 16</div>
 
-    <div class="tag tag-green">Seção 06 · 10 min</div>
-    <h2>📱 Mobile e <span class="hl">Emulação</span></h2>
-    <div class="hdivider"></div>
-
-    <div class="cols cols-3" style="margin-bottom:20px;">
-      <div class="card green-border" style="text-align:center;">
-        <div style="font-size:32px; margin-bottom:8px;">📱</div>
-        <div class="card-label">iPhone 14</div>
-        <p style="font-size:13px; color:var(--text2);">WebKit · viewport + touch + user-agent</p>
-      </div>
-      <div class="card" style="text-align:center;">
-        <div style="font-size:32px; margin-bottom:8px;">🤖</div>
-        <div class="card-label">Pixel 7</div>
-        <p style="font-size:13px; color:var(--text2);">Chromium · preset Android completo</p>
-      </div>
-      <div class="card" style="text-align:center;">
-        <div style="font-size:32px; margin-bottom:8px;">🌙</div>
-        <div class="card-label">Emulações</div>
-        <p style="font-size:13px; color:var(--text2);">locale · geolocation · colorScheme · timezone</p>
-      </div>
-    </div>
-
-    <div class="codeblock">
-      <pre><span class="cm">// playwright.config.ts — projetos mobile</span>
-<span class="kw">import</span> { defineConfig, devices } <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
-
-<span class="kw">export default</span> <span class="fn">defineConfig</span>({
-  projects: [
-    { name: <span class="str">'Desktop Chrome'</span>, use: { ...devices[<span class="str">'Desktop Chrome'</span>] } },
-    { name: <span class="str">'Mobile Safari'</span>, use: { ...devices[<span class="str">'iPhone 14'</span>] } },
-    { name: <span class="str">'Mobile Android'</span>, use: { ...devices[<span class="str">'Pixel 7'</span>] } },
-  ],
-});
-
-<span class="cm">// Emulação inline</span>
-<span class="kw">const</span> context = <span class="kw">await</span> browser.<span class="fn">newContext</span>({
-  ...devices[<span class="str">'iPhone 14'</span>], locale: <span class="str">'pt-BR'</span>, colorScheme: <span class="str">'dark'</span>,
-  geolocation: { latitude: <span class="num">-23.55</span>, longitude: <span class="num">-46.63</span> },
-  permissions: [<span class="str">'geolocation'</span>],
-});</pre>
-    </div>
-
-    <div class="tip" style="margin-top:16px;">
-      <strong>💡 Lembre-se:</strong> A emulação <strong>não é um dispositivo real</strong> — simula viewport, user-agent e touch no Chromium/WebKit. Para testes de hardware, use BrowserStack ou farms de dispositivos.
-    </div>
-    <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
-  </div>
-
-  <!-- ══ SLIDE 12 · CI COM GITHUB ACTIONS ══ -->
-  <div class="slide" id="s12">
-    <div class="bg-grid"></div>
-    <div class="slide-num">12 / 16</div>
-
-    <div class="tag tag-blue">Seção 07 · 10 min</div>
-    <h2>🚀 CI com <span class="hl">GitHub Actions</span></h2>
+    <div class="tag tag-blue">Seção 06 · 20 min</div>
+    <h2>🌐 Network <span class="hl">Interception</span> e API</h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1; align-items:start;">
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div class="card blue-border">
-          <div class="card-label">Por que rodar testes em CI</div>
+          <div class="card-label">Interceptar requests (route)</div>
           <ul class="bullets">
-            <li>Cada <strong>PR testada automaticamente</strong></li>
-            <li>Evita bugs na branch principal</li>
-            <li>Ambiente limpo e consistente</li>
-            <li>Artefatos e relatórios acessíveis no GitHub</li>
+            <li><code>page.route()</code> — interceptar requests</li>
+            <li><code>route.fulfill()</code> — retornar mock</li>
+            <li><code>route.abort()</code> — bloquear requests</li>
+            <li><code>route.continue()</code> — deixar passar</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">Dicas avançadas</div>
+          <div class="card-label">Mockar respostas</div>
           <ul class="bullets">
-            <li>Reporter <code>junit</code> — resultados inline no PR</li>
-            <li><code>npx playwright merge-reports</code> para sharding</li>
-            <li><code>if: ${{ !cancelled() }}</code> para salvar report</li>
-            <li>Workers dependem dos recursos de CI (CPU, RAM)</li>
+            <li>Evita dependência de backend instável</li>
+            <li>Testa cenários de erro (500, timeout)</li>
+            <li>Testa edge cases (lista vazia, dados grandes)</li>
+            <li>Acelera testes removendo chamadas lentas</li>
           </ul>
+        </div>
+        <div class="tip">
+          <strong>💡 Dica:</strong> Bloqueie analytics e third-party scripts para testes mais rápidos e estáveis.
         </div>
       </div>
 
       <div class="codeblock" style="flex:1;">
-        <pre><span class="cm"># .github/workflows/playwright.yml</span>
-name: Playwright Tests
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+        <pre><span class="cm">// Mock de API — retornar dados</span>
+<span class="kw">await</span> page.<span class="fn">route</span>(
+  <span class="str">'**/api/products'</span>,
+  <span class="kw">async</span> (route) => {
+  <span class="kw">await</span> route.<span class="fn">fulfill</span>({
+    status: <span class="num">200</span>,
+    contentType: <span class="str">'application/json'</span>,
+    body: <span class="fn">JSON</span>.<span class="fn">stringify</span>(
+      [{ id: <span class="num">1</span>, name: <span class="str">'Produto Mock'</span> }]),
+  });
+});
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: <span class="num">20</span>
-      - run: npm ci
-      - run: npx playwright install
-            --with-deps
-      - run: npx playwright test
-      - uses: actions/upload-artifact@v4
-        if: ${{ !cancelled() }}
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: <span class="num">30</span></pre>
+<span class="cm">// Simular erro do servidor</span>
+<span class="kw">await</span> page.<span class="fn">route</span>(
+  <span class="str">'**/api/checkout'</span>,
+  (route) => route.<span class="fn">fulfill</span>({
+    status: <span class="num">500</span>,
+    body: <span class="str">'Internal Server Error'</span>,
+  }));
+
+<span class="cm">// Bloquear analytics</span>
+<span class="kw">await</span> page.<span class="fn">route</span>(
+  <span class="str">'**/analytics/**'</span>,
+  (route) => route.<span class="fn">abort</span>());
+
+<span class="cm">// Esperar resposta real</span>
+<span class="kw">const</span> resp = <span class="kw">await</span> page
+  .<span class="fn">waitForResponse</span>(<span class="str">'**/api/users'</span>);
+<span class="fn">expect</span>(resp.<span class="fn">status</span>()).<span class="fn">toBe</span>(<span class="num">200</span>);</pre>
       </div>
     </div>
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
 
-  <!-- ══ SLIDE 13 · BOAS PRÁTICAS ══ -->
+  <!-- ══ SLIDE 12 · TESTES DE API ══ -->
+  <div class="slide" id="s12">
+    <div class="bg-grid"></div>
+    <div class="slide-num">12 / 16</div>
+
+    <div class="tag tag-blue">Seção 06 · API</div>
+    <h2>Testes de <span class="hl">API</span> com request</h2>
+    <div class="hdivider"></div>
+
+    <div class="cols cols-2" style="flex:1; align-items:start;">
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div class="card blue-border">
+          <div class="card-label">Testes de API básicos</div>
+          <ul class="bullets">
+            <li><code>request</code> fixture nativa do Playwright</li>
+            <li>Não precisa de browser — execução rápida</li>
+            <li>GET, POST, PUT, DELETE</li>
+            <li>Validar status, body, headers</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-label">Evitar dependência de backend</div>
+          <ul class="bullets">
+            <li>Use mocks para testes de UI</li>
+            <li>Use API real para testes de API</li>
+            <li>Combine: crie dados via API, teste via UI</li>
+            <li>Cleanup via API no teardown</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="codeblock" style="flex:1;">
+        <pre><span class="cm">// Teste de API direto</span>
+<span class="kw">import</span> { test, expect }
+  <span class="kw">from</span> <span class="str">'@playwright/test'</span>;
+
+test(<span class="str">'GET /api/users retorna lista'</span>,
+  <span class="kw">async</span> ({ request }) => {
+  <span class="kw">const</span> resp = <span class="kw">await</span> request
+    .<span class="fn">get</span>(<span class="str">'/api/users'</span>);
+  <span class="fn">expect</span>(resp.<span class="fn">status</span>()).<span class="fn">toBe</span>(<span class="num">200</span>);
+  <span class="kw">const</span> body = <span class="kw">await</span> resp.<span class="fn">json</span>();
+  <span class="fn">expect</span>(body.length)
+    .<span class="fn">toBeGreaterThan</span>(<span class="num">0</span>);
+});
+
+test(<span class="str">'POST /api/tags cria tag'</span>,
+  <span class="kw">async</span> ({ request }) => {
+  <span class="kw">const</span> resp = <span class="kw">await</span> request
+    .<span class="fn">post</span>(<span class="str">'/api/tags'</span>, {
+    data: { name: <span class="str">'Nova Tag'</span> },
+  });
+  <span class="fn">expect</span>(resp.<span class="fn">status</span>()).<span class="fn">toBe</span>(<span class="num">201</span>);
+  <span class="kw">const</span> tag = <span class="kw">await</span> resp.<span class="fn">json</span>();
+  <span class="fn">expect</span>(tag.name).<span class="fn">toBe</span>(<span class="str">'Nova Tag'</span>);
+});
+
+<span class="cm">// Cleanup no teardown</span>
+test.<span class="fn">afterEach</span>(<span class="kw">async</span> ({ request }) => {
+  <span class="kw">await</span> request
+    .<span class="fn">delete</span>(<span class="str">`/api/tags/${tagId}`</span>);
+});</pre>
+      </div>
+    </div>
+    <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
+  </div>
+
+  <!-- ══ SLIDE 13 · LIDANDO COM DADOS ══ -->
   <div class="slide" id="s13">
     <div class="bg-grid"></div>
     <div class="bg-glow-green"></div>
     <div class="slide-num">13 / 16</div>
 
-    <div class="tag tag-green">Seção 08 · 10 min</div>
-    <h2>✨ Boas Práticas <span class="hl">Reais</span></h2>
+    <div class="tag tag-green">Seção 07 · 15 min</div>
+    <h2>📦 Lidando com <span class="hl">Dados</span></h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1; align-items:start;">
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div class="card green-border">
-          <div class="card-label">Estrutura de pastas</div>
+          <div class="card-label">Estratégias para dados de teste</div>
           <ul class="bullets">
-            <li><code>tests/</code> — specs por funcionalidade</li>
-            <li><code>pages/</code> — Page Objects</li>
-            <li><code>fixtures/</code> — fixtures customizadas</li>
-            <li><code>utils/</code> — helpers, data factory</li>
-            <li>Comece simples, refatore depois</li>
+            <li><strong>.env</strong> — variáveis de ambiente (credenciais, URLs)</li>
+            <li><strong>Dicionário JSON</strong> — dados estáticos centralizados</li>
+            <li><strong>APIs</strong> — criar/limpar dados via endpoints</li>
+            <li><strong>Mock</strong> — dados falsos para testes isolados</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">Evitando flaky tests</div>
+          <div class="card-label">Boas práticas com dados</div>
           <ul class="bullets">
-            <li>Nunca usar <code>waitForTimeout()</code></li>
-            <li>Cada teste <strong>independente</strong></li>
-            <li>Dados únicos por teste (evitar conflitos)</li>
-            <li>Monitore e corrija a causa raiz</li>
+            <li>Dados únicos por teste (evitar conflitos paralelos)</li>
+            <li>Nunca dependa de dados pré-existentes no banco</li>
+            <li>Cleanup: crie no setup, delete no teardown</li>
+            <li>Use <strong>Faker.js</strong> para dados realistas</li>
           </ul>
+        </div>
+        <div class="tip">
+          <strong>💡 Exemplos no repo:</strong> <code>data-exemple-1/e2e</code> (dicionário JSON), <code>data-exemple-2/e2e</code> (APIs), <code>data-example-3/e2e</code> (mock).
         </div>
       </div>
 
-      <div style="display:flex; flex-direction:column; gap:16px;">
-        <div class="codeblock">
-          <pre><span class="cm"># Estrutura recomendada</span>
-meu-projeto/
-├── tests/
-│   ├── login.spec.ts
-│   ├── checkout.spec.ts
-│   └── dashboard.spec.ts
-├── pages/
-│   ├── login.page.ts
-│   └── checkout.page.ts
-├── fixtures/
-│   └── auth.fixture.ts
-├── utils/
-│   └── data-factory.ts
-├── playwright.config.ts
-└── package.json</pre>
-        </div>
-        <div class="card">
-          <div class="card-label">Lint e qualidade</div>
-          <ul class="bullets">
-            <li>ESLint com <code>max-lines: 200</code></li>
-            <li><code>no-restricted-syntax</code> para bloquear <code>.only</code></li>
-            <li>Lint no pipeline para rejeitar PRs</li>
-          </ul>
-        </div>
+      <div class="codeblock" style="flex:1;">
+        <pre><span class="cm">// .env</span>
+BASE_URL=https://staging.app.com
+ADMIN_EMAIL=admin@test.com
+ADMIN_PASS=secretpass
+
+<span class="cm">// data/tags.json — dicionário</span>
+{
+  <span class="str">"validTag"</span>: { <span class="str">"name"</span>: <span class="str">"Playwright"</span> },
+  <span class="str">"emptyTag"</span>: { <span class="str">"name"</span>: <span class="str">""</span> }
+}
+
+<span class="cm">// Criar dados via API (setup)</span>
+test.<span class="fn">beforeEach</span>(<span class="kw">async</span> ({ request }) => {
+  <span class="kw">const</span> resp = <span class="kw">await</span> request
+    .<span class="fn">post</span>(<span class="str">'/api/tags'</span>, {
+    data: { name: <span class="str">`tag-${Date.now()}`</span> },
+  });
+  tagId = (<span class="kw">await</span> resp.<span class="fn">json</span>()).id;
+});
+
+<span class="cm">// Cleanup (teardown)</span>
+test.<span class="fn">afterEach</span>(<span class="kw">async</span> ({ request }) => {
+  <span class="kw">await</span> request
+    .<span class="fn">delete</span>(<span class="str">`/api/tags/${tagId}`</span>);
+});</pre>
       </div>
     </div>
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
   </div>
 
-  <!-- ══ SLIDE 14 · DATA FACTORY ══ -->
+  <!-- ══ SLIDE 14 · INTEGRAÇÕES COM SLACK ══ -->
   <div class="slide" id="s14">
     <div class="bg-grid"></div>
     <div class="slide-num">14 / 16</div>
 
-    <div class="tag tag-green">Seção 08 · Boas Práticas</div>
-    <h2>Data Factory e <span class="hl">Dicas Finais</span></h2>
+    <div class="tag tag-green">Seção 08 · 10 min</div>
+    <h2>💬 Integrações com <span class="hl">Slack</span></h2>
     <div class="hdivider"></div>
 
     <div class="cols cols-2" style="flex:1; align-items:start;">
       <div style="display:flex; flex-direction:column; gap:16px;">
         <div class="card green-border">
-          <div class="card-label">Data Factory</div>
+          <div class="card-label">Por que integrar com Slack?</div>
           <ul class="bullets">
-            <li>Gere dados <strong>dinâmicos por teste</strong></li>
-            <li>Evita conflitos em testes paralelos</li>
-            <li>Centralize labels e mensagens em constantes</li>
-            <li>Use variáveis de ambiente para credenciais</li>
-            <li>Considere <strong>Faker.js</strong> para dados realistas</li>
+            <li>Notificação automática quando testes falham</li>
+            <li>Visibilidade para todo o time</li>
+            <li>Resultado detalhado no canal</li>
+            <li>Integra com CI/CD (GitHub Actions, etc.)</li>
           </ul>
         </div>
         <div class="card">
-          <div class="card-label">Atualização do Playwright</div>
+          <div class="card-label">Como funciona</div>
           <ul class="bullets">
-            <li><code>npm install @playwright/test@latest</code></li>
-            <li>Depois: <code>npx playwright install</code></li>
-            <li>Espere pela versão <strong>.1 ou .2</strong> de cada release</li>
-            <li>Acompanhe em <strong>playwright.dev/docs/release-notes</strong></li>
+            <li>Custom reporter ou script pós-execução</li>
+            <li>Webhook do Slack para enviar mensagens</li>
+            <li>Incluir: total, passed, failed, duração</li>
+            <li>Link para o relatório HTML</li>
           </ul>
         </div>
-        <div class="warn">
-          <strong>⚠️ Regra de ouro:</strong> Se um teste falha intermitentemente, <strong>não ignore</strong>. Investigue a causa raiz. Flaky tests destroem a confiança da suíte.
+        <div class="tip">
+          <strong>💡 Referências:</strong><br>
+          <span style="font-size:12px; font-family:'JetBrains Mono',monospace;">playwrightsolutions.com — Slack messages<br>playwrightsolutions.com — Test results to Slack</span>
         </div>
       </div>
 
       <div class="codeblock" style="flex:1;">
-        <pre><span class="cm">// utils/data-factory.ts</span>
-<span class="kw">export function</span> <span class="fn">createTestUser</span>(
-  overrides = {}
-) {
-  <span class="kw">const</span> id = Date.<span class="fn">now</span>();
-  <span class="kw">return</span> {
-    email: <span class="str">`test-${id}@example.com`</span>,
-    name: <span class="str">`User ${id}`</span>,
-    password: <span class="str">'SenhaSegura123!'</span>,
-    ...overrides,
-  };
+        <pre><span class="cm">// reporter/slack-reporter.ts</span>
+<span class="kw">import</span> { Reporter }
+  <span class="kw">from</span> <span class="str">'@playwright/test/reporter'</span>;
+
+<span class="kw">class</span> <span class="fn">SlackReporter</span>
+  <span class="kw">implements</span> Reporter {
+
+  <span class="kw">async</span> <span class="fn">onEnd</span>(result) {
+    <span class="kw">const</span> message = {
+      text: <span class="str">`🎭 Testes: ${result.status}
+✅ Passed: ${result.passed}
+❌ Failed: ${result.failed}
+⏱️ Duração: ${result.duration}ms`</span>,
+    };
+
+    <span class="kw">await</span> <span class="fn">fetch</span>(
+      process.env.SLACK_WEBHOOK_URL,
+      {
+        method: <span class="str">'POST'</span>,
+        headers: {
+          <span class="str">'Content-Type'</span>:
+            <span class="str">'application/json'</span>,
+        },
+        body: <span class="fn">JSON</span>.<span class="fn">stringify</span>(message),
+      }
+    );
+  }
 }
 
-<span class="cm">// .eslintrc.json</span>
-{
-  <span class="str">"rules"</span>: {
-    <span class="str">"max-lines"</span>:
-      [<span class="str">"error"</span>, { <span class="str">"max"</span>: <span class="num">200</span> }],
-    <span class="str">"max-params"</span>:
-      [<span class="str">"warn"</span>, <span class="num">4</span>],
-    <span class="str">"complexity"</span>:
-      [<span class="str">"warn"</span>, <span class="num">10</span>],
-    <span class="str">"no-duplicate-case"</span>:
-      <span class="str">"error"</span>,
-    <span class="str">"no-dupe-args"</span>:
-      <span class="str">"error"</span>
-  }
-}</pre>
+<span class="cm">// playwright.config.ts</span>
+reporter: [
+  [<span class="str">'html'</span>],
+  [<span class="str">'./reporter/slack-reporter.ts'</span>],
+],</pre>
       </div>
     </div>
     <div style="position:relative; z-index:1; align-self:flex-end; margin-top:auto;"><a href="https://testingwithrenata.com/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; text-decoration:none; opacity:0.45;"><img src="img/icone_branco.png" alt="" style="height:18px; width:18px;" class="logo-light"><img src="img/icone_escuro.png" alt="" style="height:18px; width:18px;" class="logo-dark"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);">testingwithrenata.com</span></a></div>
@@ -909,7 +957,7 @@ meu-projeto/
 
     <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; gap:24px;">
       <div style="font-size:72px;">🙋</div>
-      <div class="tag tag-blue">Perguntas · 10 min</div>
+      <div class="tag tag-blue">Perguntas · 5 min</div>
       <h1>Q <span class="hl">&amp;</span> A</h1>
       <p class="subtitle" style="text-align:center; margin:0 auto;">Dúvidas, comentários e feedbacks.<br>Essa é a hora de perguntar tudo!</p>
       <div style="display:flex; gap:20px; margin-top:8px; flex-wrap:wrap; justify-content:center;">
@@ -940,8 +988,8 @@ meu-projeto/
           <div style="font-family:'JetBrains Mono',monospace; font-size:14px; color:var(--teal);">playwright.dev/docs/best-practices</div>
         </div>
         <div>
-          <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Novidades</div>
-          <div style="font-family:'JetBrains Mono',monospace; font-size:14px; color:var(--teal);">playwright.dev/docs/release-notes</div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Slack Integration</div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:14px; color:var(--teal);">playwrightsolutions.com</div>
         </div>
       </div>
     </div>

@@ -1,65 +1,59 @@
-[10] Intro
 
-19:10 
-1. O que é Playwright - 10m
-Site https://playwright.dev/
-Quando usar Playwright
-19:20
-2. Setup e primeiro teste - 20m
-npm init playwright@latest
-Estrutura do projeto
-Estrutura de arquivos
-Rodar testes
-Visualizar resultados dos testes – Relatórios
-19:40
-3. Locators - 15m
-getByRole, getByText, getByTestId, etc.
-Por que evitar CSS/XPath
-Boas práticas de seleção
-19:55
-4. Interações básicas - 15min
-click, fill, select, upload, keyboard
-20:10
-5. Assertions e auto-wait - 15m
-expect
-Auto waiting
-Por que evitar waitForTimeout
-20:25
-6. Execução e browsers - 10m
-Chromium/Firefox/WebKit
-Headed vs headless
-Paralelismo básico
-20:35
-7. Debug rápido - 10m
-npx playwright test –ui
-trace viewer
-Playwright extension
-20:45
-Q&A - 15min
+1. Alinhamento e Boas Práticas Essenciais
+
+Revisão rápida da estrutura de um projeto
+Locators recomendados (role, testId)
+Anti-patterns comuns: waitForTimeout, seletores frágeis, lógica dentro do teste
+
+spec
+fixtures
+page object steps (agrupamento de locators/methods de um pom simples)
+page object 
 
 
-1. playwright.config file
-trace, video, screenshots automáticos
-2. Organização e arquitetura
-Page Object Model (simples)
-Introdução a Fixtures
-Separação de responsabilidades
-3. Autenticação
+2. Page Objects na Prática
+
+Problema: testes duplicados/difíceis de manter
+Estrutura simples de Page Object
+Separar ações vs validações
+Quando não usar Page Object
+
+3. Fixtures e Reutilização de Setup
+
+O que são fixtures
+Custom fixtures
+
+4. Autenticação e Gerenciamento de Estado
+
 storageState
-Login uma vez para todos os testes
-4. Testes mais estáveis
-Esperas corretas
-network idle
-interceptação de requests (mock básico)
-5. Múltiplos contextos e cenários
-Multi-user
-Multi-tab / popup
-6. Mobile e emulação
-device presets
-7. CI com GitHub Actions
-Exemplo pronto
-Execução em pipeline
-8. Boas práticas reais
-Estrutura de pastas
-Paralelismo
-Evitar flaky tests
+Login uma vez para toda a suíte
+Cookies e sessão
+Ambientes diferentes
+
+5. Fluxos Complexos e Múltiplos Contextos
+
+Multi-page/popups
+Multi-step flows (checkout)
+Multi-user (conceito)
+Context vs Page
+
+6. Network Interception e API
+
+Interceptar requests (route)
+Mockar respostas
+Evitar dependência de backend
+Testes de API básicos com request
+
+7. Lidando com dados
+
+Estratégias para dados de teste
+.env
+Dicionário de dados (json)
+APIs
+Mock
+
+8. Integrações com Slack
+
+Integração prática com Slack
+https://playwrightsolutions.com/how-do-you-send-slack-messages-to-a-channel-when-playwright-tests-finish/
+https://playwrightsolutions.com/how-do-i-send-the-details-of-test-results-to-slack/

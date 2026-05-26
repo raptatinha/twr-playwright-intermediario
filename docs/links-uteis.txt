@@ -10,3 +10,24 @@ https://playwright.dev/docs/trace-viewer-intro
 https://playwright.dev/docs/test-ui-mode
 https://playwright.dev/docs/debug
 https://playwright.dev/docs/codegen-intro
+
+https://eslint.style/rules
+https://www.npmjs.com/package/eslint-plugin-playwright
+https://prettier.io/docs/configuration
+https://testingwithrenata.com/blog/test-automation/playwright-e-page-object-model-pom/
+https://www.cypress.io/blog/stop-using-page-objects-and-start-using-app-actions
+
+https://testingwithrenata.com/blog/test-automation/playwright-bdd-cucumber-e-a-minha-opiniao-sobre-isso/
+
+https://github.com/raptatinha/twr-playwright-demo-mtc/blob/main/tests/ui/specs/footer.spec.ts
+
+Clean Code: A Handbook of Agile Software Craftsmanship (Robert C. Martin Series)
+https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0135398576
+
+https://www.npmjs.com/package/playwright-slack-report
+https://github.com/ryanrosello-og/playwright-slack-report
+
+https://app.slack.com/block-kit-builder/E23RE8G4F/builder
+https://app.slack.com/block-kit-builder/E23RE8G4F/templates (exemplos prontos)
+
+https://testautomationu.applitools.com/learningpaths.html?id=playwright-path
